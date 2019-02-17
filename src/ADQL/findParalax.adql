@@ -1,0 +1,4 @@
+SELECT TOP 10 *
+	FROM gaiadr2.gaia_source
+	WHERE CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS', 216.1622, 54.0911, 0.00138889)) = 1
+	ORDER BY parallax DESC
