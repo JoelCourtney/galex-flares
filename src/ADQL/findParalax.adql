@@ -1,4 +1,16 @@
 SELECT TOP 10 *
 	FROM gaiadr2.gaia_source
 	WHERE CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS', 216.1622, 54.0911, 0.00138889)) = 1
-	ORDER BY parallax DESC
+	ORDER BY parallax DESC;
+
+SELECT TOP 1 s.source_id, s.parallax, g.id
+	FROM gaiadr2.gaia_source AS s
+	JOIN user_jcourtne.gezari2013 AS g
+	ON g.id = 'GROTH_MOS01-21' AND CONTAINS(POINT('ICRS',s.ra,s.dec),CIRCLE('ICRS',g.radeg,g.dedeg,0.00138889)) = 1
+	ORDER BY s.parallax DESC;
+
+SELECT TOP 1 s.source_id, s.parallax, g.id
+	FROM gaiadr2.gaia_source AS s
+	JOIN user_jcourtne.gezari2013 AS g
+	ON g.class = 'Mdw' AND CONTAINS(POINT('ICRS',s.ra,s.dec),CIRCLE('ICRS',g.radeg,g.dedeg,0.00138889)) = 1
+	ORDER BY s.parallax DESC;
