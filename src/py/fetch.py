@@ -1,59 +1,11 @@
 import os
 import json
 import gPhoton
-import shutil
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-class NumpyEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, np.ndarray):
-            return obj.tolist()
-        return json.JSONEncoder.default(self, obj)
 
-def fetch_info(star):
-    print('Fetching info for ' + star['ID'])
-    info = gPhoton.gFind(band='both',
-        skypos=[star['RAdeg'],star['DEdeg']],
-        exponly=True, verbose=2)
-    info['flare'] = {
-        'reject': 0,
-        't_quiesent': -1,
-        't_start': -1,
-        't_end': -1
-    }
-    info['aperture'] = {
-        'rad': 0.0045,
-        'ann': [0.005,0.006]
-    }
-    write_info(star, info)
-def read_info(star):
-    infoFile = 'data/stars/' + star['ID'] + '/info.json'
-    if not os.path.exists(infoFile):
-        fetch_info(star)
-    with open(infoFile) as json_file:
-        info = json.load(json_file)
-        return info
-def write_info(star, info):
-    dir = 'data/stars/' + star['ID']
-    if not os.path.exists(dir):
-        os.mkdir(dir)
-    with open(dir + '/info.json', 'w') as fp:
-        json.dump(info, fp, cls=NumpyEncoder, indent=4)
-
-def fetch_exposures(star):
-    info = read_info(star)
-    expsFile = 'data/stars/' + star['ID'] + '/exposures.csv'
-    print('Fetching exposures for ' + star['ID'])
-    gPhoton.gAperture(band='NUV', skypos=info['NUV']['nearest_source']['skypos'],
-        csvfile=expsFile, radius=info['aperture']['rad'],
-        annulus=info['aperture']['ann'], verbose=2)
-def read_exposures(star):
-    expsFile = 'data/stars/' + star['ID'] + '/exposures.csv'
-    if not os.path.exists(expsFile):
-        fetch_exposures(star)
-    return pd.read_csv(expsFile)
 
 def fetch_window(star):
     exps = read_exposures(star)
