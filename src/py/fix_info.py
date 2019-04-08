@@ -6,6 +6,7 @@ import sources as Sources
 import info as Info
 import sys
 import time
+import bright as Bright
 
 def main():
     sources = Sources.all()
@@ -14,11 +15,7 @@ def main():
         infoFile = 'data/sources/' + source['ID'] + '/info.json'
         if os.path.exists(infoFile):
             info = Info.get(source)
-            info['locks'] = []
-            info['flares'] = {
-                'quiesent': [],
-                'flaring': []
-            }
+            info['bright_contents'] = ['quiesent']*5
             Info.write(source, info)
 
 def reset_locks():

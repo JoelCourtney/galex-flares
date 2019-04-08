@@ -23,16 +23,24 @@ def query(source, n):
             csvfile=brightFile, radius=info['aperture']['rad'],
             annulus=info['aperture']['ann'], verbose=2,
             trange=[exp['t0'],exp['t1']])
+        info['bright'][n] = [exp['t0'],exp['t1']]
         Info.unlock(source, 'bright-' + str(n))
+        Info.write(info)
         return True
     else:
         return False
 
-def get_bright_exposure(source, n):
-    return Exposures.get(source) \
-        .sort_values(by='flux_bgsub', ascending=False) \
-        .head(5).sort_values(by='t0') \
-        .iloc[n].to_dict()
+def get_bright_exposure(source, n=-1, t=-1):
+    if n != -1:
+        return Exposures.get(source) \
+            .sort_values(by='flux', ascending=False) \
+            .head(5).sort_values(by='t0') \
+            .iloc[n].to_dict()
+    elif t != -1:
+        info = Info.get(source)
+        for i,r in enumerate(info['bright']):
+            if r[0] <= t <= t[1]:
+                return get_bright_exposure(source,i)
 
 def main():
     for i in range(53):
