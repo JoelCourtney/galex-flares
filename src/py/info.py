@@ -62,7 +62,8 @@ def lock(source, aspect):
 
 def unlock(source, aspect):
     info = get(source)
-    info['locks'].remove(aspect)
+    if aspect in info['locks']:
+        info['locks'].remove(aspect)
     write(source, info)
 
 def main():

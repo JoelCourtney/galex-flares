@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 from gPhoton import gAperture
 import info as Info
 import exposures as Exposures
@@ -24,8 +26,9 @@ def query(source, n):
             annulus=info['aperture']['ann'], verbose=2,
             trange=[exp['t0'],exp['t1']])
         info['bright'][n] = [exp['t0'],exp['t1']]
+        print('Attempting to unlock: bright-' + str(n))
         Info.unlock(source, 'bright-' + str(n))
-        Info.write(info)
+        Info.write(source, info)
         return True
     else:
         return False
