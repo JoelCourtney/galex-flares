@@ -27,8 +27,8 @@ def query(source, n):
             trange=[exp['t0'],exp['t1']])
         info['bright'][n] = [exp['t0'],exp['t1']]
         print('Attempting to unlock: bright-' + str(n))
-        Info.unlock(source, 'bright-' + str(n))
         Info.write(source, info)
+        Info.unlock(source, 'bright-' + str(n))
         return True
     else:
         return False

@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import gPhoton
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -22,8 +24,13 @@ def plotFlare(source, cropped):
     # plt.show()
 
 def main():
-    bright = Bright.get(Sources.get('GROTH_MOS01-21'),4)
+    bright = Bright.get(Sources.get('GROTH_MOS05-15'),4)
+    print(bright['t0'][0])
+    print(bright['t1'][len(bright['t1'])-1])
     bright.plot(x='t0', y='flux')
+    plt.title('Flux for GROTH_MOS05-15')
+    plt.xlabel('Time (GALEX seconds)')
+    plt.ylabel('Flux (erg/s/cm^2/A)')
     plt.show()
 
 if __name__ == '__main__':

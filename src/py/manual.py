@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import exposures as Exposures
@@ -63,10 +65,9 @@ def main():
             source = Sources.get(row=i)
             info = Info.get(source)
             for f in range(5):
-                if info['bright_contents'][f] in ['bad']:
+                if info['bright_contents'][f] in ['bad','quiesent']:
                     result = classify(source, f)
                     info['bright_contents'][f] = result
-                    break
             Info.write(source, info)
 
 

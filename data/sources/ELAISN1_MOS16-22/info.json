@@ -235,10 +235,10 @@
         ]
     },
     "bright_contents": [
+        "flare",
+        "dubious",
         "quiesent",
-        "quiesent",
-        "quiesent",
-        "quiesent",
+        "dubious",
         "quiesent"
     ],
     "aperture": {

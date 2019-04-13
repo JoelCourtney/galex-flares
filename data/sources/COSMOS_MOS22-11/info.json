@@ -205,11 +205,11 @@
         ]
     },
     "bright_contents": [
-        "quiesent",
-        "quiesent",
-        "quiesent",
-        "quiesent",
-        "quiesent"
+        "flare",
+        "flare",
+        "bad",
+        "flare",
+        "flare"
     ],
     "aperture": {
         "ann": [
