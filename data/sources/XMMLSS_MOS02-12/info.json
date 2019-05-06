@@ -251,9 +251,9 @@
     "bright_contents": [
         "quiesent",
         "quiesent",
-        "bad",
         "quiesent",
-        "flare"
+        "quiesent",
+        "dubious"
     ],
     "aperture": {
         "ann": [

@@ -24,7 +24,7 @@ def plotFlare(source, cropped):
     # plt.show()
 
 def main():
-    bright = Bright.get(Sources.get('GROTH_MOS05-15'),4)
+    bright = Bright.get(Sources.get('GROTH_MOS05-15'),4,3)
     print(bright['t0'][0])
     print(bright['t1'][len(bright['t1'])-1])
     bright.plot(x='t0', y='flux')

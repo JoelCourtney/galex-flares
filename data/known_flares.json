@@ -1,0 +1,374 @@
+[
+    {
+        "source": "GROTH_MOS01-21",
+        "bright_window": 1,
+        "quiesent": [
+            926334757.0,
+            926334772.0
+        ],
+        "flare": [
+            926334772.0,
+            926334797.0
+        ]
+    },
+    {
+        "source": "GROTH_MOS07-09",
+        "bright_window": 4,
+        "quiesent": [
+            984175115.0,
+            984176007.0
+        ],
+        "flare": [
+            984174486.0,
+            984174910.0
+        ]
+    },
+    {
+        "source": "CDFS_MOS02-20",
+        "bright_window": 3,
+        "quiesent": [
+            941802845.0,
+            941803292.0
+        ],
+        "flare": [
+            941803315.0,
+            941803915.0
+        ]
+    },
+    {
+        "source": "CDFS_MOS00-41",
+        "bright_window": 3,
+        "quiesent": [
+            975218644.0,
+            975219332.0
+        ],
+        "flare": [
+            975219365.0,
+            975219672.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS22-11",
+        "bright_window": 0,
+        "quiesent": [
+            890423694.0,
+            890424594.0
+        ],
+        "flare": [
+            890424920.0,
+            890425200.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS22-11",
+        "bright_window": 1,
+        "quiesent": [
+            949486996.0,
+            949487515.0
+        ],
+        "flare": [
+            949487571.0,
+            949487797.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS22-11",
+        "bright_window": 3,
+        "quiesent": [
+            951717188.0,
+            951717744.0
+        ],
+        "flare": [
+            951717767.0,
+            951718144.0
+        ]
+    },
+    {
+        "source": "GROTH_MOS05-00",
+        "bright_window": 1,
+        "quiesent": [
+            825668733.0,
+            825668997.0
+        ],
+        "flare": [
+            825669000.0,
+            825669658.0
+        ]
+    },
+    {
+        "source": "GROTH_MOS05-00",
+        "bright_window": 2,
+        "quiesent": [
+            860168880.0,
+            860169800.0
+        ],
+        "flare": [
+            860168326.0,
+            860168862.0
+        ]
+    },
+    {
+        "source": "GROTH_MOS05-00",
+        "bright_window": 4,
+        "quiesent": [
+            953231552.0,
+            953232488.0
+        ],
+        "flare": [
+            953232495.0,
+            953233121.0
+        ]
+    },
+    {
+        "source": "XMMLSS_MOS06-22",
+        "bright_window": 3,
+        "quiesent": [
+            911320181.0,
+            911320539.0
+        ],
+        "flare": [
+            911319903.0,
+            911320197.0
+        ]
+    },
+    {
+        "source": "XMMLSS_MOS06-13",
+        "bright_window": 1,
+        "quiesent": [
+            942081703.0,
+            942082371.0
+        ],
+        "flare": [
+            942081288.0,
+            942081535.0
+        ]
+    },
+    {
+        "source": "XMMLSS_MOS00-06",
+        "bright_window": 4,
+        "quiesent": [
+            973580320.0,
+            973580975.0
+        ],
+        "flare": [
+            973581023.0,
+            973581249.0
+        ]
+    },
+    {
+        "source": "GROTH_MOS04-09",
+        "bright_window": 3,
+        "quiesent": [
+            952870753.0,
+            952871372.0
+        ],
+        "flare": [
+            952871405.0,
+            952872336.0
+        ]
+    },
+    {
+        "source": "VVDS22H_MOS01-12",
+        "bright_window": 1,
+        "quiesent": [
+            936951825.0,
+            936952566.0
+        ],
+        "flare": [
+            936952618.0,
+            936952868.0
+        ]
+    },
+    {
+        "source": "VVDS22H_MOS01-12",
+        "bright_window": 4,
+        "quiesent": [
+            965648191.0,
+            965649277.0
+        ],
+        "flare": [
+            965649321.0,
+            965649532.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS27-03",
+        "bright_window": 2,
+        "quiesent": [
+            949847943.0,
+            949848399.0
+        ],
+        "flare": [
+            949848429.0,
+            949848824.0
+        ]
+    },
+    {
+        "source": "CDFS_MOS00-19",
+        "bright_window": 4,
+        "quiesent": [
+            974278264.0,
+            974279249.0
+        ],
+        "flare": [
+            974279375.0,
+            974279930.0
+        ]
+    },
+    {
+        "source": "ELAISN1_MOS12-16",
+        "bright_window": 3,
+        "quiesent": [
+            991384862.0,
+            991385055.0
+        ],
+        "flare": [
+            991384728.0,
+            991384849.0
+        ]
+    },
+    {
+        "source": "CDFS_MOS05-07",
+        "bright_window": 4,
+        "quiesent": [
+            944766190.0,
+            944767028.0
+        ],
+        "flare": [
+            944767191.0,
+            944767433.0
+        ]
+    },
+    {
+        "source": "ELAISN1_MOS15-10",
+        "bright_window": 1,
+        "quiesent": [
+            806060516.0,
+            806061539.0
+        ],
+        "flare": [
+            806060276.0,
+            806060434.0
+        ]
+    },
+    {
+        "source": "ELAISN1_MOS15-10",
+        "bright_window": 4,
+        "quiesent": [
+            991402349.0,
+            991403379.0
+        ],
+        "flare": [
+            991403397.0,
+            991403637.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS23-27",
+        "bright_window": 2,
+        "quiesent": [
+            890169347.0,
+            890170431.0
+        ],
+        "flare": [
+            890170477.0,
+            890170830.0
+        ]
+    },
+    {
+        "source": "ELAISN1_MOS15-16",
+        "bright_window": 3,
+        "quiesent": [
+            987628908.0,
+            987629512.0
+        ],
+        "flare": [
+            987629540.0,
+            987629946.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS25-06",
+        "bright_window": 0,
+        "quiesent": [
+            884360697.0,
+            884361258.0
+        ],
+        "flare": [
+            884360490.0,
+            884360672.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS25-06",
+        "bright_window": 1,
+        "quiesent": [
+            884378357.0,
+            884378654.0
+        ],
+        "flare": [
+            884378709.0,
+            884378994.0
+        ]
+    },
+    {
+        "source": "ELAISN1_MOS12-02",
+        "bright_window": 3,
+        "quiesent": [
+            956928896.0,
+            956929307.0
+        ],
+        "flare": [
+            956929357.0,
+            956929553.0
+        ]
+    },
+    {
+        "source": "VVDS22H_MOS00-15",
+        "bright_window": 0,
+        "quiesent": [
+            933994460.0,
+            933995389.0
+        ],
+        "flare": [
+            933994217.0,
+            933994357.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS24-02",
+        "bright_window": 0,
+        "quiesent": [
+            760518168.0,
+            760518251.0
+        ],
+        "flare": [
+            760518255.0,
+            760519084.0
+        ]
+    },
+    {
+        "source": "COSMOS_MOS22-09",
+        "bright_window": 4,
+        "quiesent": [
+            981867750.0,
+            981868782.0
+        ],
+        "flare": [
+            981869104.0,
+            981869224.0
+        ]
+    },
+    {
+        "source": "GROTH_MOS02-19",
+        "bright_window": 3,
+        "quiesent": [
+            952717204.0,
+            952718553.0
+        ],
+        "flare": [
+            952716926.0,
+            952717131.0
+        ]
+    }
+]

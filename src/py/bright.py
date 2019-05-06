@@ -7,19 +7,19 @@ import os
 import sources as Sources
 import pandas as pd
 
-def get(source, n):
+def get(source, n, step=10):
     brightFile = 'data/sources/' + source['ID'] + '/bright-' + str(n) + '.csv'
-    if not os.path.exists(brightFile) and not query(source, n):
+    if not os.path.exists(brightFile) and not query(source, n, step):
         return None
     return pd.read_csv(brightFile)
 
-def query(source, n):
+def query(source, n, step):
     if Info.lock(source, 'bright-' + str(n)):
         brightFile = 'data/sources/' + source['ID'] + '/bright-' + str(n) + '.csv'
         photonsFile = 'data/sources/' + source['ID'] + '/photons-' + str(n) + '.csv'
         info = Info.get(source)
         exp = get_bright_exposure(source, n)
-        step = 10. if (exp['t1'] - exp['t0']) > 200 else 5.
+        step = step if (exp['t1'] - exp['t0']) > 200 else step/2.
         print('Querying bright exposure ' + str(n) + ' for ' + source['ID'])
         gAperture(band='NUV', skypos=info['NUV']['nearest_source']['skypos'], stepsz=step,
             csvfile=brightFile, radius=info['aperture']['rad'],

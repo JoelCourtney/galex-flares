@@ -7,6 +7,7 @@ import info as Info
 import sources as Sources
 import sys
 import bright as Bright
+import flares as Flares
 
 def delimit(source, n):
     times = []
@@ -56,16 +57,18 @@ def classify(source, n):
 
 def main():
     if sys.argv[1] == 'delimit':
-        for i in range(53):
-            source = Sources.get(row=i)
-            for f in range(5):
-                print(delimit(source, f))
+        flares = Flares.read_info()
+        for i in range(len(flares)):
+            source = Sources.get(flares[i]['source'])
+            n = flares[i]['bright_window']
+            times = delimit(source, n)
+            Flares.write_times(i, [times[0],times[1]],[times[2],times[3]])
     if sys.argv[1] == 'classify':
         for i in range(53):
             source = Sources.get(row=i)
             info = Info.get(source)
             for f in range(5):
-                if info['bright_contents'][f] in ['bad','quiesent']:
+                if info['bright_contents'][f] in ['bad','quiesent','flare']:
                     result = classify(source, f)
                     info['bright_contents'][f] = result
             Info.write(source, info)

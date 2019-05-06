@@ -12,6 +12,6 @@ def main():
     exp = Bright.get_bright_exposure(source, 4)
     gMap(band='NUV', skypos = info['NUV']['nearest_source']['skypos'],
             intensity='imageFile', angle=info['aperture']['rad'],
-            trange=[exp['t0'],exp['t1']], verbose=2)
+            trange=[exp['t0'],exp['t0']+10], verbose=2)
 if __name__ == '__main__':
     main()
