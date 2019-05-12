@@ -24,10 +24,10 @@ def plotFlare(source, cropped):
     # plt.show()
 
 def main():
-    bright = Bright.get(Sources.get('GROTH_MOS05-15'),4,3)
+    bright = Bright.get(Sources.get('CDFS_MOS02-20'),3,10)
     print(bright['t0'][0])
     print(bright['t1'][len(bright['t1'])-1])
-    bright.plot(x='t0', y='flux')
+    bright.plot(x='t0', y='counts')
     plt.title('Flux for GROTH_MOS05-15')
     plt.xlabel('Time (GALEX seconds)')
     plt.ylabel('Flux (erg/s/cm^2/A)')

@@ -5,8 +5,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-
 def fetch_window(star):
     exps = read_exposures(star)
     info = read_info(star)
