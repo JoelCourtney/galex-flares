@@ -6,6 +6,7 @@ import sys
 import time
 import sources as Sources
 from gPhoton import gFind
+import numpy as np
 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):

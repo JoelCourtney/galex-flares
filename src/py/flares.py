@@ -5,12 +5,19 @@ import info as Info
 import json
 import bright as Bright
 from shutil import copyfile
+import numpy as np
+import distances as Dist
+import math
 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
             return obj.tolist()
         return json.JSONEncoder.default(self, obj)
+
+def get(flare_n):
+    flares = read_info()
+    return flares[flare_n]
 
 def create_info():
     knownFlares = []
@@ -65,6 +72,27 @@ def extract_flare_region(flare_n):
     return flare.loc[(flare_info['flare'][0] <= flare['t0']) & (flare['t0'] <= flare_info['flare'][1])]
 def calculate_quiesent_mean(flare_n,col):
     quiesent = extract_quiesent_region(flare_n)
-    print(quiesent.mean(axis=0)[col])
+    return quiesent.mean(axis=0)[col]
 
-print(calculate_quiesent_mean(0,'flux'))
+def integrate_flux(flare_n):
+    base = calculate_quiesent_mean(flare_n, 'flux')
+    flare_info = read_info()[flare_n]
+    source = Sources.get(flare_info['source'])
+    flare = extract_flare_region(flare_n)
+    area = np.trapz(flare['flux']-base, x=flare['t0'])
+    return area
+
+def calculate_energy(flare_n):
+    flare_info = read_info()[flare_n]
+    source = Sources.get(flare_info['source'])
+    int_flux = integrate_flux(flare_n)
+    distance = Dist.get(source)
+    if not distance:
+        return None
+    distance *= 3.086e18
+    bandwidth = 950 # angstroms
+    energy = int_flux * 4 * math.pi * distance**2 * bandwidth
+    return energy
+
+for i in range(20):
+    print(calculate_energy(i))
