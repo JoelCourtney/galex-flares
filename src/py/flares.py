@@ -61,12 +61,12 @@ def get_energy(flare_n):
         write_info(flares)
 
 def extract_quiesent_region(flare_n):
-    flare_info = read_info()[flare_n]
+    flare_info = get(flare_n)
     source = Sources.get(flare_info['source'])
     flare = Bright.get(source,flare_info['bright_window'])
     return flare.loc[(flare_info['quiesent'][0] <= flare['t0']) & (flare['t0'] <= flare_info['quiesent'][1])]
 def extract_flare_region(flare_n):
-    flare_info = read_info()[flare_n]
+    flare_info = get(flare_n)
     source = Sources.get(flare_info['source'])
     flare = Bright.get(source,flare_info['bright_window'])
     return flare.loc[(flare_info['flare'][0] <= flare['t0']) & (flare['t0'] <= flare_info['flare'][1])]
@@ -75,11 +75,11 @@ def calculate_quiesent_mean(flare_n,col):
     return quiesent.mean(axis=0)[col]
 
 def integrate_flux(flare_n):
-    base = calculate_quiesent_mean(flare_n, 'flux')
-    flare_info = read_info()[flare_n]
+    base = calculate_quiesent_mean(flare_n, 'flux_mcatbgsub')
+    flare_info = get(flare_n)
     source = Sources.get(flare_info['source'])
     flare = extract_flare_region(flare_n)
-    area = np.trapz(flare['flux']-base, x=flare['t0'])
+    area = np.trapz(flare['flux_mcatbgsub']-base, x=flare['t0'])
     return area
 
 def calculate_energy(flare_n):
@@ -94,5 +94,11 @@ def calculate_energy(flare_n):
     energy = int_flux * 4 * math.pi * distance**2 * bandwidth
     return energy
 
-for i in range(20):
-    print(calculate_energy(i))
+energies = []
+for i in range(31):
+    energy = calculate_energy(i)
+    print(energy)
+    if energy:
+        energies.append(energy)
+
+print(np.mean(energies))
