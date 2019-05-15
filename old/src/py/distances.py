@@ -21,7 +21,10 @@ def query(source):
     width = u.Quantity(0.1, u.deg)
     height = u.Quantity(0.1, u.deg)
     r = Gaia.query_object_async(coordinate=coord, width=width, height=height)
+    r.pprint()
     distance = 1000/r['parallax'][0]
     info['distance'] = distance
     Info.write(source, info)
     return distance
+source = Sources.get('GROTH_MOS01-21')
+query(source)
