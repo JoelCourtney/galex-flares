@@ -5,6 +5,10 @@ create table Sources (
     GezariDE DECIMAL(7,4) NOT NULL,
     GalexRA DECIMAL(18,15) NOT NULL,
     GalexDE DECIMAL(18,15) NOT NULL,
+    GaiaID BIGINT NOT NULL,
+    GaiaRA DECIMAL(18,15) NOT NULL,
+    GaiaDE DECIMAL(18,15) NOT NULL,
+    Parallax DECIMAL(18,15),
     PRIMARY KEY (SourceID)
 );
 
@@ -21,13 +25,3 @@ create table Flares (
 );
 
 drop table if exists Stars;
-create table Stars (
-	GaiaID BIGINT NOT NULL,
-    SourceID VARCHAR(20) NOT NULL,
-    GaiaRA DECIMAL(18,15),
-    GaiaDE DECIMAL(18,15),
-    Parallax DECIMAL(18,15),
-    PRIMARY KEY (GaiaID),
-    FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
-);
-    

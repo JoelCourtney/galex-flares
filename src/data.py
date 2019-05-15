@@ -15,7 +15,7 @@ db = sql.connect(
     'galex_flares'
 )
 # prepare a cursor object using cursor() method
-cursor = db.cursor()
+cursor = db.cursor(sql.cursors.DictCursor)
 
 # execute SQL query using execute() method.
 cursor.execute("SELECT VERSION()")
@@ -24,15 +24,16 @@ cursor.execute("SELECT VERSION()")
 data = cursor.fetchone()
 print ("Database version : %s " % data)
 
-def insert_source(SourceID, GezariRA, GezariDE, GalexRA=0, GalexDE=0):
+def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax):
     try:
-        query = "INSERT INTO Sources (SourceID, GezariRA, GezariDE, GalexRA, GalexDE) VALUES ('%s',%f,%f,%f,%f);" % (SourceID, GezariRA, GezariDE, GalexRA, GalexDE)
+        query = "INSERT INTO Sources (SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax) VALUES ('%s',%.15f,%.15f,%.15f,%.15f,%d,%.15f,%.15f,%.15f);" % (SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax)
         print(query)
         cursor.execute(query)
         db.commit()
     except:
         db.rollback()
         print("insert source failed")
+
 
 def insert_flare(SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd):
     try:
@@ -44,4 +45,11 @@ def insert_flare(SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd):
         db.rollback()
         print("insert flare failed")
 
-insert_flare('hi', 1,2,3,43)
+def get_source(sourceID):
+    try:
+        query = "SELECT * FROM Sources where SourceID = '%s';" % sourceID
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchone()
+    except:
+        print("Source ID not found")
