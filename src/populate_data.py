@@ -19,7 +19,14 @@ def sources():
 
 def lightcurve(sourceID):
     source = data.get_source(sourceID)
-    print(source['GalexRA'])
+    RA = source['GalexRA']
+    DE = source['GalexDE']
+    outFile = 'test.csv'
+    gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
+        csvfile=outFile, radius=info['aperture']['rad'],
+        annulus=info['aperture']['ann'], verbose=2,
+        trange=[exp['t0'],exp['t1']])
+
 
 if __name__ == '__main__':
     lightcurve('GROTH_MOS01-21')
