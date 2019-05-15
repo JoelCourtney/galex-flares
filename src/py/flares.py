@@ -8,6 +8,7 @@ from shutil import copyfile
 import numpy as np
 import distances as Dist
 import math
+import matplotlib.pyplot as plt
 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -98,7 +99,13 @@ energies = []
 for i in range(31):
     energy = calculate_energy(i)
     print(energy)
-    if energy:
+    if energy and not math.isnan(energy):
         energies.append(energy)
 
 print(np.mean(energies))
+plt.hist(energies, bins=np.logspace(30,35, 20))
+plt.gca().set_xscale('log')
+plt.xlabel('NUV Energy of Flare (ergs)')
+plt.ylabel('# Occurances')
+plt.title('Energy Distribution of Flares')
+plt.show()
