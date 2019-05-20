@@ -24,4 +24,18 @@ create table Flares (
     FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
 );
 
-drop table if exists Stars;
+create table Locks (
+	SourceID VARCHAR(20) NOT NULL,
+    Attribute VARCHAR(15) NOT NULL,
+    PRIMARY KEY (SourceID, Attribute)
+);
+
+drop table Parameters;
+create table Parameters (
+	Parameter VARCHAR(30) NOT NULL,
+    Val DECIMAL(15,8) NOT NULL,
+    PRIMARY KEY (Parameter)
+);
+INSERT INTO Parameters (Parameter, Val) VALUES ('ApertureRadius', 0.0045);
+INSERT INTO Parameters (Parameter, Val) VALUES ('AnnulusInnerRadius', 0.005);
+INSERT INTO Parameters (Parameter, Val) VALUES ('AnnulusOuterRadius', 0.006);
