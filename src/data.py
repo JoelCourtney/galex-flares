@@ -146,6 +146,7 @@ def get_parameter(Parameter):
         print("Parameter not found")
 
 def drop_table(table, areYouSure, areYouReallySure):
+    table = clean_dashes(table)
     if areYouSure and areYouReallySure:
         try:
             query = "DROP TABLE %s" % table
@@ -217,7 +218,7 @@ def create_lightcurve_table(SourceID, file):
                 line = insert_nulls(line)
                 query = query + "(%s)," % line
             query = query[:-1] + ';'
-            print(query)
+            # print(query)
             cursor.execute(query)
         db.commit()
     except:

@@ -29,7 +29,7 @@ def lightcurve(SourceID):
     gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
         csvfile=outFile, radius=ap,
         annulus=[annIn, annOut], verbose=3)
-    data.drop_table(SourceID + '_lightcurve', true, true)
+    data.drop_table(SourceID + '_lightcurve', True, True)
     data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
 
 def all_lightcurves():
