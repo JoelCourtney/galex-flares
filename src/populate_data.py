@@ -3,7 +3,7 @@
 import data as data
 import json
 import pandas as pd
-import gaia
+# import gaia
 from gPhoton import gAperture
 
 def sources():
