@@ -76,7 +76,7 @@ def get_source(sourceID):
 
 def create_lock(SourceID, Attribute):
     try:
-        query = "INSERT INTO Locks (SourceID, Attribute, Status) VALUES ('%s', '%s', 'Taken');" % (SourceID, Attribute)
+        query = "INSERT INTO Locks (SourceID, Attribute, Status) VALUES ('%s', '%s', 'taken');" % (SourceID, Attribute)
         print(query)
         cursor.execute(query)
         db.commit()
@@ -121,7 +121,7 @@ def get_lock_status(SourceID, Attribute):
 
 def clear_locks():
     try:
-        query = "DELETE FROM Locks;"
+        query = "DELETE FROM Locks WHERE Status <> 'complete';"
         print(query)
         cursor.execute(query)
         db.commit()

@@ -1,5 +1,6 @@
 drop table if exists Sources;
 create table Sources (
+	RowNum INT NOT NULL AUTO_INCREMENT,
 	SourceID VARCHAR(20) NOT NULL,
     GezariRA DECIMAL(7,4) NOT NULL,
     GezariDE DECIMAL(7,4) NOT NULL,
@@ -9,8 +10,9 @@ create table Sources (
     GaiaRA DECIMAL(18,15) NOT NULL,
     GaiaDE DECIMAL(18,15) NOT NULL,
     Parallax DECIMAL(18,15),
-    PRIMARY KEY (SourceID)
+    PRIMARY KEY (RowNum)
 );
+alter table Sources add RowNum INT AUTO_INCREMENT;
 
 drop table if exists Flares;
 create table Flares (
@@ -28,7 +30,9 @@ create table Locks (
 	SourceID VARCHAR(20) NOT NULL,
     Attribute VARCHAR(15) NOT NULL,
     PRIMARY KEY (SourceID, Attribute)
+    
 );
+ALTER TABLE Locks ADD Status VARCHAR(10) NOT NULL;
 
 drop table Parameters;
 create table Parameters (
