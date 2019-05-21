@@ -28,7 +28,7 @@ def lightcurve(SourceID):
     annOut = data.get_parameter('AnnulusOuterRadius')
     gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
         csvfile=outFile, radius=ap,
-        annulus=[annIn, annOut], verbose=0)
+        annulus=[annIn, annOut], verbose=3)
     data.drop_table(SourceID + '_lightcurve', true, true)
     data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
 
