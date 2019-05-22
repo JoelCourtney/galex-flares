@@ -6,7 +6,7 @@ import pandas as pd
 
 def insert_nulls(s):
     while True:
-        newS = s.replace(',,',',null,')
+        newS = s.replace(',,',',null,').replace('inf','null')
         if newS == s:
             return newS
         else:
@@ -41,9 +41,10 @@ def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA
         print(query)
         cursor.execute(query)
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
         print("insert source failed")
+        print(e)
 
 
 def insert_flare(SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd):
@@ -52,9 +53,10 @@ def insert_flare(SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd):
         print(query)
         cursor.execute(query)
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
         print("insert flare failed")
+        print(e)
 
 def get_source(sourceID):
     if isinstance(sourceID, str):
@@ -63,7 +65,7 @@ def get_source(sourceID):
             print(query)
             cursor.execute(query)
             return cursor.fetchone()
-        except:
+        except Exception as e:
             print("Source ID not found")
     else:
         try:
@@ -71,8 +73,9 @@ def get_source(sourceID):
             print(query)
             cursor.execute(query)
             return cursor.fetchone()
-        except:
+        except Exception as e:
             print("RowNum not found")
+            print(e)
 
 def create_lock(SourceID, Attribute):
     try:
@@ -81,8 +84,9 @@ def create_lock(SourceID, Attribute):
         cursor.execute(query)
         db.commit()
         return True
-    except:
+    except Exception as e:
         print("Could not get lock: %s, %s" % (SourceID, Attribute))
+        print(e)
         db.rollback()
         return False
 
@@ -92,9 +96,10 @@ def change_lock(SourceID, Attribute, Status):
         print(query)
         cursor.execute(query)
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
         print('Could not change lock')
+        print(e)
 
 def release_lock(SourceID, Attribute):
     try:
@@ -102,9 +107,10 @@ def release_lock(SourceID, Attribute):
         print(query)
         cursor.execute(query)
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
         print("Could not release lock: %s, %s" % (SourceID, Attribute))
+        print(e)
 
 def get_lock_status(SourceID, Attribute):
     try:
@@ -116,8 +122,9 @@ def get_lock_status(SourceID, Attribute):
             return res['Status']
         else:
             return None
-    except:
+    except Exception as e:
         print("Could not check status")
+        print(e)
 
 def clear_locks():
     try:
@@ -125,9 +132,10 @@ def clear_locks():
         print(query)
         cursor.execute(query)
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
         print("Could not clear locks")
+        print(e)
 
 def get_first_open_lock(Attribute):
     for i in range(1,54):
@@ -142,8 +150,9 @@ def get_parameter(Parameter):
         print(query)
         cursor.execute(query)
         return float(cursor.fetchone()['Val'])
-    except:
+    except Exception as e:
         print("Parameter not found")
+        print(e)
 
 def drop_table(table, areYouSure, areYouReallySure):
     table = clean_dashes(table)
@@ -153,9 +162,10 @@ def drop_table(table, areYouSure, areYouReallySure):
             print(query)
             cursor.execute(query)
             db.commit()
-        except:
+        except Exception as e:
             db.rollback()
             print("Table %s doesn't exist" % table)
+            print(e)
 
 def create_lightcurve_table(SourceID, file):
     SourceID = clean_dashes(SourceID)
@@ -209,18 +219,27 @@ def create_lightcurve_table(SourceID, file):
         ) % SourceID
         print(query)
         cursor.execute(query)
+        print('created')
         with open(file) as curve:
             lines = curve.readlines()
             header = lines[0]
-            lines.pop(0)
-            query = "INSERT INTO %s_lightcurve (%s) VALUES " % (SourceID,header)
-            for line in lines:
+            del lines[0]
+            start = "INSERT INTO %s_lightcurve (%s) VALUES " % (SourceID,header)
+            query = start
+            for i,line in enumerate(lines):
                 line = insert_nulls(line)
                 query = query + "(%s)," % line
-            query = query[:-1] + ';'
-            # print(query)
-            cursor.execute(query)
+                if i > 10 and i % 1000 == 0:
+                    query = query[:-1] + ';'
+                    print(query)
+                    cursor.execute(query)
+                    query = start
+            if i % 1000 != 0:
+                query = query[:-1] + ';'
+                print(query)
+                cursor.execute(query)
         db.commit()
-    except:
+    except Exception as e:
         db.rollback()
         print("Failed to create table")
+        print(e)

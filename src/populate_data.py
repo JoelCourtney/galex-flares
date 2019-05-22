@@ -6,6 +6,12 @@ import pandas as pd
 # import gaia
 from gPhoton import gAperture
 
+class NumpyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return json.JSONEncoder.default(self, obj)
+
 def sources():
     sources = pd.read_csv("../data/gezari_clean.csv")
     for i in range(53):
@@ -29,7 +35,7 @@ def lightcurve(SourceID):
     gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
         csvfile=outFile, radius=ap,
         annulus=[annIn, annOut], verbose=3)
-    data.drop_table(SourceID + '_lightcurve', True, True)
+    # data.drop_table(SourceID + '_lightcurve', True, True)
     data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
 
 def all_lightcurves():
