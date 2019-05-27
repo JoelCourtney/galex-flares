@@ -35,6 +35,15 @@ cursor.execute("SELECT VERSION()")
 data = cursor.fetchone()
 print ("Database version : %s " % data)
 
+def refresh_connection():
+    db = sql.connect(
+        'galex-flares.chbe8bqs2zwl.us-east-1.rds.amazonaws.com',
+        'joelcourtney',
+        'Peri-melasma*',
+        'galex_flares'
+    )
+    cursor = db.cursor(sql.cursors.DictCursor)
+
 def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax):
     try:
         query = "INSERT INTO Sources (SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax) VALUES ('%s',%.15f,%.15f,%.15f,%.15f,%d,%.15f,%.15f,%.15f);" % (SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax)
