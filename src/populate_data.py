@@ -36,8 +36,8 @@ def lightcurve(SourceID):
         csvfile=outFile, radius=ap,
         annulus=[annIn, annOut], verbose=3)
     # data.drop_table(SourceID + '_lightcurve', True, True)
-    data.refresh_connection()
-    data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
+    # data.refresh_connection()
+    # data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
 
 def all_lightcurves():
     for i in range(1,54):
