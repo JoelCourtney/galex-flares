@@ -3,6 +3,8 @@
 import pymysql as sql
 import atexit
 import pandas as pd
+import os
+
 
 def insert_nulls(s):
     while True:
@@ -11,12 +13,17 @@ def insert_nulls(s):
             return newS
         else:
             s = newS
+
+
 def clean_dashes(s):
     return s.replace('-','_')
+
 
 def close():
     print("Closing connection")
     db.close()
+
+
 atexit.register(close)
 
 db = sql.connect(
@@ -35,6 +42,7 @@ cursor.execute("SELECT VERSION()")
 data = cursor.fetchone()
 print ("Database version : %s " % data)
 
+
 def refresh_connection():
     db = sql.connect(
         'galex-flares.chbe8bqs2zwl.us-east-1.rds.amazonaws.com',
@@ -43,6 +51,7 @@ def refresh_connection():
         'galex_flares'
     )
     cursor = db.cursor(sql.cursors.DictCursor)
+
 
 def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax):
     try:
@@ -56,9 +65,9 @@ def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA
         print(e)
 
 
-def insert_flare(SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd):
+def insert_flare(SourceID, Quality, FlareStart=0, FlareEnd=0, QuiesentStart=0, QuiesentEnd=0):
     try:
-        query = "INSERT INTO Flares (SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd) VALUES ('%s',%d,%d,%d,%d);" % (SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd)
+        query = "INSERT INTO Flares (SourceID, Quality, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd) VALUES ('%s',%s,%d,%d,%d,%d);" % (SourceID, Quality, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd)
         print(query)
         cursor.execute(query)
         db.commit()
@@ -66,6 +75,7 @@ def insert_flare(SourceID, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd):
         db.rollback()
         print("insert flare failed")
         print(e)
+
 
 def get_source(sourceID):
     if isinstance(sourceID, str):
@@ -86,6 +96,7 @@ def get_source(sourceID):
             print("RowNum not found")
             print(e)
 
+
 def create_lock(SourceID, Attribute):
     try:
         query = "INSERT INTO Locks (SourceID, Attribute, Status) VALUES ('%s', '%s', 'taken');" % (SourceID, Attribute)
@@ -99,6 +110,7 @@ def create_lock(SourceID, Attribute):
         db.rollback()
         return False
 
+
 def change_lock(SourceID, Attribute, Status):
     try:
         query = "UPDATE Locks SET Status = '%s' WHERE SourceID = '%s' AND Attribute = '%s';" % (Status, SourceID, Attribute)
@@ -110,6 +122,7 @@ def change_lock(SourceID, Attribute, Status):
         print('Could not change lock')
         print(e)
 
+
 def release_lock(SourceID, Attribute):
     try:
         query = "DELETE FROM Locks WHERE SourceID = '%s' AND Attribute = '%s';" % (SourceID, Attribute)
@@ -120,6 +133,7 @@ def release_lock(SourceID, Attribute):
         db.rollback()
         print("Could not release lock: %s, %s" % (SourceID, Attribute))
         print(e)
+
 
 def get_lock_status(SourceID, Attribute):
     try:
@@ -135,6 +149,7 @@ def get_lock_status(SourceID, Attribute):
         print("Could not check status")
         print(e)
 
+
 def clear_locks():
     try:
         query = "DELETE FROM Locks WHERE Status <> 'complete';"
@@ -146,12 +161,14 @@ def clear_locks():
         print("Could not clear locks")
         print(e)
 
+
 def get_first_open_lock(Attribute):
     for i in range(1,54):
         source = get_source(i)
         if get_lock_status(source['SourceID'], Attribute) is None:
             return source
     return False
+
 
 def get_parameter(Parameter):
     try:
@@ -162,6 +179,7 @@ def get_parameter(Parameter):
     except Exception as e:
         print("Parameter not found")
         print(e)
+
 
 def drop_table(table, areYouSure, areYouReallySure):
     table = clean_dashes(table)
@@ -175,6 +193,7 @@ def drop_table(table, areYouSure, areYouReallySure):
             db.rollback()
             print("Table %s doesn't exist" % table)
             print(e)
+
 
 def create_lightcurve_table(SourceID, file):
     SourceID = clean_dashes(SourceID)
@@ -252,3 +271,23 @@ def create_lightcurve_table(SourceID, file):
         db.rollback()
         print("Failed to create table")
         print(e)
+
+
+def get_lightcurve(sourceID):
+    try:
+        query = "SELECT * FROM %s_lightcurve;" % clean_dashes(sourceID)
+        print(query)
+        df = pd.read_sql(query, db)
+        return df
+    except Exception as e:
+        print("lightcurve query failed")
+        print(e)
+
+
+def get_exposures(sourceID):
+    expsFile = '../data/sources/' + sourceID + '/exposures.csv'
+    if not os.path.exists(expsFile):
+        print(sourceID + " info file does not exist")
+    info = pd.read_csv(expsFile)
+    exps = info[['t0','t1','t_mean']].copy()
+    return exps

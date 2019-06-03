@@ -11,6 +11,7 @@ import flares as Flares
 
 def delimit(source, n):
     times = []
+
     def onclick(event):
         global ix, iy
         ix, iy = event.xdata, event.ydata
