@@ -2,14 +2,16 @@
 
 import matplotlib.pyplot as plt
 import data
+import numpy as np
+import math
 
 
 def delimit_flare(sourceID):
+    data.delete_flares(sourceID)
     flare = data.get_lightcurve(sourceID)
     exps = data.get_exposures(sourceID)
     for r in range(len(exps)):
         times = []
-
 
         def onclick(event):
             global ix, iy
@@ -17,16 +19,7 @@ def delimit_flare(sourceID):
             print('x = %d, y = %d' % (
                 ix, iy))
             times.append(round(ix))
-            if ix is None:
-                print("No flare")
-                fig.canvas.mpl_disconnect(cid)
-                plt.close(fig)
-                times.clear()
-            elif iy is None:
-                print("Bad flare")
-                fig.canvas.mpl_disconnect(cid)
-                plt.close(fig)
-            elif len(times) == 2:
+            if len(times) == 2:
                 print('Please delimit quiesent period')
             elif len(times) == 4:
                 fig.canvas.mpl_disconnect(cid)
@@ -35,20 +28,45 @@ def delimit_flare(sourceID):
         t0 = exps.iloc[r]['t0']
         t1 = exps.iloc[r]['t1']
         exp = flare.loc[(flare['t0'] >= t0) & (flare['t1'] <= t1)]
-        fig = exp.plot(x='t0', y='flux').get_figure()
-        cid = fig.canvas.mpl_connect('button_press_event', onclick)
-        print(sourceID)
-        plt.show()
+        if not exp.empty:
+            fig = exp.plot(x='t0', y='flux').get_figure()
+            cid = fig.canvas.mpl_connect('button_press_event', onclick)
+            print(sourceID)
+            plt.show()
+            if len(times) == 1:
+                data.insert_flare(sourceID, False, t0, t1)
+            elif len(times) == 4:
+                data.insert_flare(sourceID, True, times[0], times[1], times[2], times[3])
+        else:
+            print("No data in exposure")
 
 
 def delimit_all_flares():
     print("Delimit flares if possible.")
-    print("Bad x = no flare")
-    print("Bad y = bad flare")
+    print("Close window = no flare")
+    print("One click = bad flare")
     for i in range(1, 54):
         source = data.get_source(i)
-        delimit_flare(source['SourceID'])
+        if data.create_lock(source['SourceID'], 'flares'):
+            delimit_flare(source['SourceID'])
+            data.change_lock(source['SourceID'], 'flares', 'complete')
+
+
+def calculate_energy(flare):
+    flare_lc = data.get_lightcurve_range(flare['SourceID'], flare['FlareStart'], flare['FlareEnd'])
+    # flare_lc.plot(x='t0', y='flux')
+    # plt.show()
+    quiesent_lc = data.get_lightcurve_range(flare['SourceID'], flare['QuiesentStart'], flare['QuiesentEnd'])
+    quiesent_mean = quiesent_lc.mean(axis=0)['flux_bgsub']
+    area = np.trapz(flare_lc['flux_mcatbgsub'] - quiesent_mean, x=flare_lc['t0'])
+    distance = 1000 / data.get_parallax(flare['SourceID'])
+    distance *= 3.086e18
+    bandwidth = 1050
+    energy = area * 4 * math.pi * (distance ** 2) * bandwidth
+    return energy
 
 
 if __name__ == '__main__':
-    delimit_all_flares()
+    # delimit_all_flares()
+    flare = data.get_flare(6)
+    print(calculate_energy(flare))

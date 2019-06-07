@@ -27,7 +27,7 @@ def close():
 atexit.register(close)
 
 db = sql.connect(
-    'galex-flares.chbe8bqs2zwl.us-east-1.rds.amazonaws.com',
+    'galex-flares-new.chbe8bqs2zwl.us-east-1.rds.amazonaws.com',
     'joelcourtney',
     'Peri-melasma*',
     'galex_flares'
@@ -65,7 +65,7 @@ def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA
         print(e)
 
 
-def insert_flare(SourceID, Quality, FlareStart=0, FlareEnd=0, QuiesentStart=0, QuiesentEnd=0):
+def insert_flare(SourceID, Quality, FlareStart, FlareEnd, QuiesentStart=0, QuiesentEnd=0):
     try:
         query = "INSERT INTO Flares (SourceID, Quality, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd) VALUES ('%s',%s,%d,%d,%d,%d);" % (SourceID, Quality, FlareStart, FlareEnd, QuiesentStart, QuiesentEnd)
         print(query)
@@ -74,6 +74,28 @@ def insert_flare(SourceID, Quality, FlareStart=0, FlareEnd=0, QuiesentStart=0, Q
     except Exception as e:
         db.rollback()
         print("insert flare failed")
+        print(e)
+
+
+def get_flare(FlareID):
+    try:
+        query = "SELECT * FROM Flares WHERE FlareID = %d;" % FlareID
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchone()
+    except Exception as e:
+        print("Could not get flare")
+        print(e)
+
+
+def delete_flares(SourceID):
+    try:
+        query = "DELETE FROM Flares WHERE SourceID = '%s';" % SourceID
+        print(query)
+        cursor.execute(query)
+    except Exception as e:
+        db.rollback()
+        print("delete flares failed")
         print(e)
 
 
@@ -86,12 +108,33 @@ def get_source(sourceID):
             return cursor.fetchone()
         except Exception as e:
             print("Source ID not found")
+            print(e)
     else:
         try:
             query = "SELECT * FROM Sources WHERE RowNum = %d;" % sourceID
             print(query)
             cursor.execute(query)
             return cursor.fetchone()
+        except Exception as e:
+            print("RowNum not found")
+            print(e)
+
+def get_parallax(SourceID):
+    if isinstance(SourceID, str):
+        try:
+            query = "SELECT Parallax FROM Sources WHERE SourceID = '%s';" % SourceID
+            print(query)
+            cursor.execute(query)
+            return float(cursor.fetchone()['Parallax'])
+        except Exception as e:
+            print("Source ID not found")
+            print(e)
+    else:
+        try:
+            query = "SELECT Parallax FROM Sources WHERE RowNum = %d;" % SourceID
+            print(query)
+            cursor.execute(query)
+            return float(cursor.fetchone()['Parallax'])
         except Exception as e:
             print("RowNum not found")
             print(e)
@@ -252,9 +295,9 @@ def create_lightcurve_table(SourceID, file):
             lines = curve.readlines()
             header = lines[0]
             del lines[0]
-            start = "INSERT INTO %s_lightcurve (%s) VALUES " % (SourceID,header)
+            start = "INSERT INTO %s_lightcurve (%s) VALUES " % (SourceID, header)
             query = start
-            for i,line in enumerate(lines):
+            for i, line in enumerate(lines):
                 line = insert_nulls(line)
                 query = query + "(%s)," % line
                 if i > 10 and i % 1000 == 0:
@@ -291,3 +334,14 @@ def get_exposures(sourceID):
     info = pd.read_csv(expsFile)
     exps = info[['t0','t1','t_mean']].copy()
     return exps
+
+
+def get_lightcurve_range(sourceID, start, end):
+    try:
+        query = "SELECT * FROM %s_lightcurve WHERE t0 >= %d AND t0 <= %d;" % (clean_dashes(sourceID),start,end)
+        print(query)
+        df = pd.read_sql(query, db)
+        return df
+    except Exception as e:
+        print("lightcurve range query failed")
+        print(e)
