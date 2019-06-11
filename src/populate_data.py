@@ -6,11 +6,13 @@ import pandas as pd
 # import gaia
 from gPhoton import gAperture
 
+
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
             return obj.tolist()
         return json.JSONEncoder.default(self, obj)
+
 
 def sources():
     sources = pd.read_csv("../data/gezari_clean.csv")
@@ -24,11 +26,12 @@ def sources():
         r = gaia.query(galexRA, galexDE)
         data.insert_source(row['ID'],row['RAdeg'],row['DEdeg'],galexRA,galexDE,r['source_id'][0],r['ra'][0],r['dec'][0],r['parallax'][0])
 
+
 def lightcurve(SourceID):
     source = data.get_source(SourceID)
     RA = float(source['GalexRA'])
     DE = float(source['GalexDE'])
-    outFile = SourceID + '-lightcurve.csv'
+    outFile = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
     ap = data.get_parameter('ApertureRadius')
     annIn = data.get_parameter('AnnulusInnerRadius')
     annOut = data.get_parameter('AnnulusOuterRadius')
@@ -39,6 +42,7 @@ def lightcurve(SourceID):
     # data.refresh_connection()
     # data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
 
+
 def all_lightcurves():
     for i in range(1,54):
         source = data.get_source(i)
@@ -46,6 +50,7 @@ def all_lightcurves():
             data.create_lock(source['SourceID'], 'lightcurve')
             lightcurve(source['SourceID'])
             data.change_lock(source['SourceID'], 'lightcurve', 'complete')
+
 
 if __name__ == '__main__':
     all_lightcurves()
