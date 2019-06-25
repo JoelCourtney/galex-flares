@@ -16,7 +16,7 @@ def insert_nulls(s):
 
 
 def clean_dashes(s):
-    return s.replace('-','_')
+    return s.replace('-', '_')
 
 
 def close():
@@ -238,87 +238,38 @@ def drop_table(table, areYouSure, areYouReallySure):
             print(e)
 
 
-def create_lightcurve_table(SourceID, file):
-    SourceID = clean_dashes(SourceID)
-    drop_table(SourceID+'_lightcurve', True, True)
+def insert_lightcurve(SourceID):
     try:
-        query = (
-            "CREATE TABLE %s_lightcurve ("
-            "t0 DEC(15,5),"
-            "t1 DEC(15,5),"
-            "t_mean DEC(15,5),"
-            "t0_data DEC(15,5),"
-            "t1_data DEC(15,5),"
-            "cps_bgsub FLOAT(24),"
-            "cps_bgsub_err FLOAT(24),"
-            "flux_bgsub FLOAT(24),"
-            "flux_bgsub_err FLOAT(24),"
-            "mag_bgsub FLOAT(24),"
-            "mag_bgsub_err_1 FLOAT(24),"
-            "mag_bgsub_err_2 FLOAT(24),"
-            "cps_mcatbgsub FLOAT(24),"
-            "cps_mcatbgsub_err FLOAT(24),"
-            "flux_mcatbgsub FLOAT(24),"
-            "flux_mcatbgsub_err FLOAT(24),"
-            "mag_mcatbgsub FLOAT(24),"
-            "mag_mcatbgsub_err_1 FLOAT(24),"
-            "mag_mcatbgsub_err_2 FLOAT(24),"
-            "cps FLOAT(24),"
-            "cps_err FLOAT(24),"
-            "flux FLOAT(24),"
-            "flux_err FLOAT(24),"
-            "mag FLOAT(24),"
-            "mag_err_1 FLOAT(24),"
-            "mag_err_2 FLOAT(24),"
-            "counts INT,"
-            "flat_counts FLOAT(24),"
-            "bg_counts INT,"
-            "bg_flat_counts FLOAT(24),"
-            "exptime FLOAT(24),"
-            "bg FLOAT(24),"
-            "mcat_bg FLOAT(24),"
-            "responses FLOAT(24),"
-            "detxs FLOAT(24),"
-            "detys FLOAT(24),"
-            "detrad FLOAT(24),"
-            "racent FLOAT(24),"
-            "deccent FLOAT(24),"
-            "q_mean FLOAT(24),"
-            "flags INT,"
-            "PRIMARY KEY (t0)"
-            ");"
-        ) % SourceID
-        print(query)
-        cursor.execute(query)
-        print('created')
+        file = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
         with open(file) as curve:
             lines = curve.readlines()
             header = lines[0]
             del lines[0]
-            start = "INSERT INTO %s_lightcurve (%s) VALUES " % (SourceID, header)
+            start = "INSERT INTO Lightcurves (SourceID,%s) VALUES " % header
             query = start
             for i, line in enumerate(lines):
                 line = insert_nulls(line)
-                query = query + "(%s)," % line
+                query = query + "('%s',%s)," % (SourceID, line)
                 if i > 10 and i % 1000 == 0:
                     query = query[:-1] + ';'
-                    print(query)
+                    # print(query)
                     cursor.execute(query)
                     query = start
             if i % 1000 != 0:
                 query = query[:-1] + ';'
-                print(query)
+                # print(query)
                 cursor.execute(query)
         db.commit()
     except Exception as e:
-        db.rollback()
-        print("Failed to create table")
+        print("could not insert lightcurve")
         print(e)
+        db.rollback()
+        exit()
 
 
 def get_lightcurve(sourceID):
     try:
-        query = "SELECT * FROM %s_lightcurve;" % clean_dashes(sourceID)
+        query = "SELECT * FROM Lightcurves WHERE SourceID = '%s' ORDER BY t0 ASC LIMIT 10000;" % sourceID
         print(query)
         df = pd.read_sql(query, db)
         return df
@@ -332,13 +283,13 @@ def get_exposures(sourceID):
     if not os.path.exists(expsFile):
         print(sourceID + " info file does not exist")
     info = pd.read_csv(expsFile)
-    exps = info[['t0','t1','t_mean']].copy()
+    exps = info[['t0', 't1', 't_mean']].copy()
     return exps
 
 
 def get_lightcurve_range(sourceID, start, end):
     try:
-        query = "SELECT * FROM %s_lightcurve WHERE t0 >= %d AND t0 <= %d;" % (clean_dashes(sourceID),start,end)
+        query = "SELECT * FROM Lightcurves WHERE (SourceID = '%s') AND (t0 >= %d) AND (t0 <= %d) ORDER BY t0 LIMIT 10000;" % (sourceID,start,end)
         print(query)
         df = pd.read_sql(query, db)
         return df

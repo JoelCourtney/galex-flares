@@ -5,6 +5,7 @@ import json
 import pandas as pd
 # import gaia
 from gPhoton import gAperture
+import os
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -44,7 +45,7 @@ def lightcurve(SourceID):
 
 
 def all_lightcurves():
-    for i in range(1,54):
+    for i in range(1, 54):
         source = data.get_source(i)
         if data.get_lock_status(source['SourceID'], 'lightcurve') is None:
             data.create_lock(source['SourceID'], 'lightcurve')
@@ -52,7 +53,16 @@ def all_lightcurves():
             data.change_lock(source['SourceID'], 'lightcurve', 'complete')
 
 
+def lightcurve_table():
+    for i in range(1, 54):
+        source = data.get_source(i)
+        file = '../data/lightcurves/' + source['SourceID'] + '-lightcurve.csv'
+        if os.path.exists(file):
+            data.insert_lightcurve(source['SourceID'])
+
+
 if __name__ == '__main__':
-    all_lightcurves()
+    # all_lightcurves()
     # lightcurve('GROTH_MOS01-21')
     # sources()
+    lightcurve_table()

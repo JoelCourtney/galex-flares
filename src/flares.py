@@ -9,6 +9,8 @@ import math
 def delimit_flare(sourceID):
     data.delete_flares(sourceID)
     flare = data.get_lightcurve(sourceID)
+    if flare.empty:
+        return False
     exps = data.get_exposures(sourceID)
     for r in range(len(exps)):
         times = []
@@ -29,9 +31,14 @@ def delimit_flare(sourceID):
         t1 = exps.iloc[r]['t1']
         exp = flare.loc[(flare['t0'] >= t0) & (flare['t1'] <= t1)]
         if not exp.empty:
-            fig = exp.plot(x='t0', y='flux').get_figure()
+            fig = exp.plot(x='t0', y=['flux', 'flux_bgsub']).get_figure()
             cid = fig.canvas.mpl_connect('button_press_event', onclick)
             print(sourceID)
+            bottom, top = plt.ylim()
+            if bottom < -1.e-14:
+                plt.ylim(bottom=-1.e-14)
+            if top > 1.e-14:
+                plt.ylim(top=1.e-14)
             plt.show()
             if len(times) == 1:
                 data.insert_flare(sourceID, False, t0, t1)
@@ -39,6 +46,7 @@ def delimit_flare(sourceID):
                 data.insert_flare(sourceID, True, times[0], times[1], times[2], times[3])
         else:
             print("No data in exposure")
+    return True
 
 
 def delimit_all_flares():
@@ -48,8 +56,10 @@ def delimit_all_flares():
     for i in range(1, 54):
         source = data.get_source(i)
         if data.create_lock(source['SourceID'], 'flares'):
-            delimit_flare(source['SourceID'])
-            data.change_lock(source['SourceID'], 'flares', 'complete')
+            if delimit_flare(source['SourceID']):
+                data.change_lock(source['SourceID'], 'flares', 'complete')
+            else:
+                data.release_lock(source['SourceID'], 'flares')
 
 
 def calculate_energy(flare):
@@ -67,6 +77,6 @@ def calculate_energy(flare):
 
 
 if __name__ == '__main__':
-    # delimit_all_flares()
-    flare = data.get_flare(6)
-    print(calculate_energy(flare))
+    delimit_all_flares()
+    # flare = data.get_flare(6)
+    # print(calculate_energy(flare))
