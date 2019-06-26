@@ -269,7 +269,7 @@ def insert_lightcurve(SourceID):
 
 def get_lightcurve(sourceID):
     try:
-        query = "SELECT * FROM Lightcurves WHERE SourceID = '%s' ORDER BY t0 ASC LIMIT 10000;" % sourceID
+        query = "SELECT * FROM Lightcurves WHERE SourceID = '%s' ORDER BY t0 ASC LIMIT 100000;" % sourceID
         print(query)
         df = pd.read_sql(query, db)
         return df
