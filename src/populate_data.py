@@ -62,7 +62,7 @@ def lightcurve_table():
 
 
 if __name__ == '__main__':
-    # all_lightcurves()
+    all_lightcurves()
     # lightcurve('GROTH_MOS01-21')
     # sources()
-    lightcurve_table()
+    # lightcurve_table()
