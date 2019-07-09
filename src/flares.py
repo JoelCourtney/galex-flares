@@ -69,14 +69,54 @@ def calculate_energy(flare):
     quiesent_lc = data.get_lightcurve_range(flare['SourceID'], flare['QuiesentStart'], flare['QuiesentEnd'])
     quiesent_mean = quiesent_lc.mean(axis=0)['flux_bgsub']
     area = np.trapz(flare_lc['flux_mcatbgsub'] - quiesent_mean, x=flare_lc['t0'])
-    distance = 1000 / data.get_parallax(flare['SourceID'])
+    parallax = data.get_parallax(flare['SourceID'])
+    if parallax == None:
+        parallax = float('nan')
+        print(flare['SourceID'])
+    distance = 1000 / parallax
     distance *= 3.086e18
     bandwidth = 1050
     energy = area * 4 * math.pi * (distance ** 2) * bandwidth
     return energy
 
 
+def calculate_all_energies():
+    energies = []
+    flares = data.get_good_flares()
+    discarded = 0
+    for flare in flares:
+        energy = calculate_energy(flare)
+        if energy and not math.isnan(energy):
+            data.set_energy(flare['FlareID'], energy)
+            energies.append(calculate_energy(flare))
+        else:
+            discarded += 1
+    print("Discarded: " + str(discarded))
+    print(np.median(energies))
+
+
+def plot_energies():
+    energies = [energy['Energy'] for energy in data.get_all_energies()]
+    print(energies)
+    plt.hist(energies)
+    # plt.gca().set_xscale('log')
+    plt.xlabel('NUV Energy of Flare (ergs)')
+    plt.ylabel('# Occurances')
+    plt.title('Energy Distribution of Flares')
+    plt.show()
+
+
+def show_flares_for_source(Source):
+    flares = data.get_flares_for_source(Source)
+    for flare in flares:
+        lc = data.get_lightcurve_range(flare['SourceID'], flare['FlareStart']-500, flare['FlareEnd']+500)
+        lc.plot(x='t0', y='flux')
+        plt.show()
+
+
 if __name__ == '__main__':
-    delimit_all_flares()
+    # calculate_all_energies()
+    plot_energies()
     # flare = data.get_flare(6)
+    # show_flares_for_source('COSMOS_MOS22-09')
     # print(calculate_energy(flare))

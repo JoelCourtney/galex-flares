@@ -88,14 +88,60 @@ def get_flare(FlareID):
         print(e)
 
 
+def get_flares_for_source(SourceID):
+    try:
+        query = "SELECT * FROM Flares WHERE SourceID = '%s';" % SourceID
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print("could not get flares for source")
+        print(e)
+
+
+def get_good_flares():
+    try:
+        query = "SELECT * FROM Flares WHERE Quality = 1;"
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print("could not get all flares")
+        print(e)
+
+
 def delete_flares(SourceID):
     try:
         query = "DELETE FROM Flares WHERE SourceID = '%s';" % SourceID
         print(query)
         cursor.execute(query)
+        db.commit()
     except Exception as e:
         db.rollback()
         print("delete flares failed")
+        print(e)
+
+
+def set_energy(FlareID, Energy):
+    try:
+        query = "UPDATE Flares SET Energy = %f WHERE FlareID = '%s';" % (Energy, FlareID)
+        print(query)
+        cursor.execute(query)
+        db.commit()
+    except Exception as e:
+        db.rollback()
+        print("could not set energy")
+        print(e)
+
+
+def get_all_energies():
+    try:
+        query = "SELECT Energy FROM Flares WHERE Energy IS NOT NULL;"
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print("could not get energies")
         print(e)
 
 
@@ -118,6 +164,7 @@ def get_source(sourceID):
         except Exception as e:
             print("RowNum not found")
             print(e)
+
 
 def get_parallax(SourceID):
     if isinstance(SourceID, str):
