@@ -66,3 +66,4 @@ if __name__ == '__main__':
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()
+    # data.insert_lightcurve('GROTH_MOS07-09')

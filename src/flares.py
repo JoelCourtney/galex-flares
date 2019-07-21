@@ -99,7 +99,7 @@ def plot_energies():
     energies = [energy['Energy'] for energy in data.get_all_energies()]
     print(energies)
     plt.hist(energies)
-    # plt.gca().set_xscale('log')
+    plt.gca().set_xscale('log')
     plt.xlabel('NUV Energy of Flare (ergs)')
     plt.ylabel('# Occurances')
     plt.title('Energy Distribution of Flares')
@@ -120,3 +120,4 @@ if __name__ == '__main__':
     # flare = data.get_flare(6)
     # show_flares_for_source('COSMOS_MOS22-09')
     # print(calculate_energy(flare))
+    # delimit_all_flares()
