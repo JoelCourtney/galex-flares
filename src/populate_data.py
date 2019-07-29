@@ -6,6 +6,7 @@ import pandas as pd
 # import gaia
 from gPhoton import gAperture
 import os
+import math
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -61,9 +62,18 @@ def lightcurve_table():
             data.insert_lightcurve(source['SourceID'])
 
 
+def set_heights():
+    for i in range(1, 54):
+        source = data.get_source(i)
+        parallax = source['Parallax']
+        if parallax is not None:
+            dist = 1000.0 / float(parallax)
+            height = math.sin(math.radians(float(source['GalexDE']))) * dist
+            print(height)
+
+
 if __name__ == '__main__':
     all_lightcurves()
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()
-    # data.insert_lightcurve('GROTH_MOS07-09')

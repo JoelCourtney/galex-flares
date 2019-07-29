@@ -343,3 +343,15 @@ def get_lightcurve_range(sourceID, start, end):
     except Exception as e:
         print("lightcurve range query failed")
         print(e)
+
+
+def set_height(sourceID, height):
+    try:
+        query = "UPDATE TABLE Sources SET Height = %f WHERE SourceID = '%s';" % (height, sourceID)
+        print(query)
+        cursor.execute(query)
+        db.commit()
+    except Exception as e:
+        print("could not set height")
+        print(e)
+        db.rollback()
