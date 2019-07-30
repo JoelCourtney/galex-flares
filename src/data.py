@@ -99,6 +99,17 @@ def get_flares_for_source(SourceID):
         print(e)
 
 
+def get_good_flares_for_source(SourceID):
+    try:
+        query = "SELECT * FROM Flares WHERE Quality = TRUE AND SourceID = '%s';" % SourceID
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print("could not get flares for source")
+        print(e)
+
+
 def get_good_flares():
     try:
         query = "SELECT * FROM Flares WHERE Quality = 1;"
@@ -355,3 +366,14 @@ def set_height(sourceID, height):
         print("could not set height")
         print(e)
         db.rollback()
+
+
+def get_sdss(sourceID):
+    try:
+        query = "SELECT * FROM SDSS WHERE SourceID = '%s';" % sourceID
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchone()
+    except Exception as e:
+        print("could not get sdss")
+        print(e)

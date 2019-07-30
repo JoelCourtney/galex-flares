@@ -107,17 +107,31 @@ def plot_energies():
 
 
 def show_flares_for_source(Source):
-    flares = data.get_flares_for_source(Source)
+    flares = data.get_good_flares_for_source(Source)
     for flare in flares:
+        print(flare['FlareID'])
         lc = data.get_lightcurve_range(flare['SourceID'], flare['FlareStart']-500, flare['FlareEnd']+500)
         lc.plot(x='t0', y='flux')
         plt.show()
 
 
+def show_all_good_flares():
+    flares = data.get_good_flares()
+    for flare in flares:
+        print(flare['SourceID'])
+        print(flare['FlareID'])
+        lc = data.get_lightcurve_range(flare['SourceID'], flare['FlareStart']-500, flare['FlareEnd']+500)
+        print(lc)
+        if not lc.empty:
+            lc.plot(x='t0', y='flux')
+            plt.show()
+
+
 if __name__ == '__main__':
     # calculate_all_energies()
-    plot_energies()
+    # plot_energies()
     # flare = data.get_flare(6)
-    # show_flares_for_source('COSMOS_MOS22-09')
+    # show_flares_for_source('COSMOS_MOS25-12')
     # print(calculate_energy(flare))
     # delimit_all_flares()
+    show_all_good_flares()
