@@ -7,6 +7,7 @@ import os
 import math
 import query.gaia
 import query.sources
+import query.misc
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -26,23 +27,44 @@ def sources():
         galexRA = info['NUV']['nearest_source']['skypos'][0]
         galexDE = info['NUV']['nearest_source']['skypos'][1]
         r = query.gaia.query(galexRA, galexDE)
-        query.sources.insert_source(row['ID'],row['RAdeg'],row['DEdeg'],galexRA,galexDE,r['source_id'][0],r['ra'][0],r['dec'][0],r['parallax'][0])
+        query.sources.insert_source(row['ID'], row['RAdeg'], row['DEdeg'], galexRA, galexDE, r['source_id'][0],
+                                    r['ra'][0], r['dec'][0], r['parallax'][0])
 
 
 def lightcurve(SourceID):
     source = query.sources.get_source(SourceID)
-    RA = float(source['GalexRA'])
-    DE = float(source['GalexDE'])
-    outFile = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
+    ra = float(source['GalexRA'])
+    de = float(source['GalexDE'])
+    out_file = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
     ap = query.misc.get_parameter('ApertureRadius')
-    annIn = query.misc.get_parameter('AnnulusInnerRadius')
-    annOut = query.misc.get_parameter('AnnulusOuterRadius')
-    gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
-        csvfile=outFile, radius=ap,
-        annulus=[annIn, annOut], verbose=3)
+    ann_in = query.misc.get_parameter('AnnulusInnerRadius')
+    ann_out = query.misc.get_parameter('AnnulusOuterRadius')
+    gAperture(band='NUV', skypos=[ra, de], stepsz=10,
+              csvfile=out_file, radius=ap,
+              annulus=[ann_in, ann_out], verbose=3)
     # data.drop_table(SourceID + '_lightcurve', True, True)
     # data.refresh_connection()
-    # data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
+    # data.create_lightcurve_table(SourceID, pd.read_csv(out_file))
+
+
+def incremental_lightcurve(sourceID):
+    source = query.sources.get_source(sourceID)
+    ra = float(source['GalexRA'])
+    de = float(source['GalexDE'])
+    ap = query.misc.get_parameter('ApertureRadius')
+    ann_in = query.misc.get_parameter('AnnulusInnerRadius')
+    ann_out = query.misc.get_parameter('AnnulusOuterRadius')
+    dir_path = '../data/lightcurves/' + sourceID
+    if not os.path.exists(dir_path):
+        os.mkdir(dir_path)
+    start = len(os.listdir(dir_path))
+    exps = query.misc.get_exposures(sourceID)
+    for i in range(start, len(exps)):
+        exp = exps.iloc[i]
+        out_file = dir_path + '/exposure-' + str(i) + '.csv'
+        gAperture(band='NUV', skypos=[ra, de], stepsz=10, trange=[exp['t0'], exp['t1']],
+                  csvfile=out_file, radius=ap,
+                  annulus=[ann_in, ann_out], verbose=3)
 
 
 def all_lightcurves():
@@ -73,7 +95,8 @@ def set_heights():
 
 
 if __name__ == '__main__':
-    all_lightcurves()
+    # all_lightcurves()
+    incremental_lightcurve('GROTH_MOS05-00')
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()

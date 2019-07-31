@@ -1,3 +1,8 @@
+from query.db import *
+import os
+import pandas as pd
+
+
 def get_parameter(Parameter):
     try:
         query = "SELECT Val FROM Parameters WHERE Parameter = '%s';" % Parameter

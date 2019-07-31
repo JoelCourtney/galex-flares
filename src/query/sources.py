@@ -1,3 +1,7 @@
+from query.db import *
+import query.sdss
+
+
 def insert_source(SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax):
     try:
         query = "INSERT INTO Sources (SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax) VALUES ('%s',%.15f,%.15f,%.15f,%.15f,%d,%.15f,%.15f,%.15f);" % (SourceID, GezariRA, GezariDE, GalexRA, GalexDE, GaiaID, GaiaRA, GaiaDE, Parallax)
@@ -31,6 +35,17 @@ def get_source(sourceID):
             print(e)
 
 
+def get_all_sources():
+    try:
+        query = "SELECT * FROM Sources;"
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print("count not get all sources")
+        print(e)
+
+
 def get_parallax(SourceID):
     if isinstance(SourceID, str):
         try:
@@ -62,3 +77,12 @@ def set_source_height(sourceID, height):
         print("could not set height")
         print(e)
         db.rollback()
+
+
+def get_distance(sourceID): # IN PARSECS
+    par = get_parallax(sourceID)
+    if par != None:
+        return 1000 / par
+    else:
+        # do sdss things
+        return float('nan')

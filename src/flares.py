@@ -70,12 +70,7 @@ def calculate_energy(flare):
     quiesent_lc = query.lightcurves.get_lightcurve_range(flare['SourceID'], flare['QuiesentStart'], flare['QuiesentEnd'])
     quiesent_mean = quiesent_lc.mean(axis=0)['flux_bgsub']
     area = np.trapz(flare_lc['flux_mcatbgsub'] - quiesent_mean, x=flare_lc['t0'])
-    parallax = data.get_parallax(flare['SourceID'])
-    if parallax == None:
-        parallax = float('nan')
-        print(flare['SourceID'])
-    distance = 1000 / parallax
-    distance *= 3.086e18
+    distance = query.sources.get_distance(flare['SourceID']) * 3.086e18
     bandwidth = 1050
     energy = area * 4 * math.pi * (distance ** 2) * bandwidth
     return energy
