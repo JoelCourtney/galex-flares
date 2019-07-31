@@ -1,12 +1,12 @@
 #! /usr/bin/env python3
 
-import data as data
 import json
 import pandas as pd
-# import gaia
 from gPhoton import gAperture
 import os
 import math
+import query.gaia
+import query.sources
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -25,18 +25,18 @@ def sources():
             info = json.load(file)
         galexRA = info['NUV']['nearest_source']['skypos'][0]
         galexDE = info['NUV']['nearest_source']['skypos'][1]
-        r = gaia.query(galexRA, galexDE)
-        data.insert_source(row['ID'],row['RAdeg'],row['DEdeg'],galexRA,galexDE,r['source_id'][0],r['ra'][0],r['dec'][0],r['parallax'][0])
+        r = query.gaia.query(galexRA, galexDE)
+        query.sources.insert_source(row['ID'],row['RAdeg'],row['DEdeg'],galexRA,galexDE,r['source_id'][0],r['ra'][0],r['dec'][0],r['parallax'][0])
 
 
 def lightcurve(SourceID):
-    source = data.get_source(SourceID)
+    source = query.sources.get_source(SourceID)
     RA = float(source['GalexRA'])
     DE = float(source['GalexDE'])
     outFile = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
-    ap = data.get_parameter('ApertureRadius')
-    annIn = data.get_parameter('AnnulusInnerRadius')
-    annOut = data.get_parameter('AnnulusOuterRadius')
+    ap = query.misc.get_parameter('ApertureRadius')
+    annIn = query.misc.get_parameter('AnnulusInnerRadius')
+    annOut = query.misc.get_parameter('AnnulusOuterRadius')
     gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
         csvfile=outFile, radius=ap,
         annulus=[annIn, annOut], verbose=3)
@@ -47,24 +47,24 @@ def lightcurve(SourceID):
 
 def all_lightcurves():
     for i in range(1, 54):
-        source = data.get_source(i)
-        if data.get_lock_status(source['SourceID'], 'lightcurve') is None:
-            data.create_lock(source['SourceID'], 'lightcurve')
+        source = query.sources.get_source(i)
+        if query.locks.get_lock_status(source['SourceID'], 'lightcurve') is None:
+            query.locks.create_lock(source['SourceID'], 'lightcurve')
             lightcurve(source['SourceID'])
-            data.change_lock(source['SourceID'], 'lightcurve', 'complete')
+            query.locks.change_lock(source['SourceID'], 'lightcurve', 'complete')
 
 
 def lightcurve_table():
     for i in range(1, 54):
-        source = data.get_source(i)
+        source = query.sources.get_source(i)
         file = '../data/lightcurves/' + source['SourceID'] + '-lightcurve.csv'
         if os.path.exists(file):
-            data.insert_lightcurve(source['SourceID'])
+            query.lightcurves.insert_lightcurve(source['SourceID'])
 
 
 def set_heights():
     for i in range(1, 54):
-        source = data.get_source(i)
+        source = query.sources.get_source(i)
         parallax = source['Parallax']
         if parallax is not None:
             dist = 1000.0 / float(parallax)

@@ -3,7 +3,7 @@
 import astropy.units as u
 from astropy.coordinates import SkyCoord
 from astroquery.gaia import Gaia
-import numpy as np
+
 
 def query(RA,DE):
     coord = SkyCoord(ra=RA, dec=DE, unit=(u.degree, u.degree), frame='icrs')

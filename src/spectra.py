@@ -1,6 +1,5 @@
-import data
+import query.sdss
 import numpy as np
-import pandas as pd
 import math
 from pyraf import iraf
 
@@ -29,7 +28,7 @@ sigma = [
 
 
 def get_sdss_spectral_type(sourceID):
-    sdss = data.get_sdss(sourceID)
+    sdss = query.sdss.get_sdss(sourceID)
     x = np.matrix([[sdss['r']-sdss['i']], [sdss['i']-sdss['z']]])
     return [(1./(2.*math.pi*math.sqrt(np.linalg.norm(sigma[i])))) * math.exp((-1./2)*np.transpose(x-mu[i])*np.linalg.inv(sigma[i])*(x-mu[i])) for i in range(8)]
 
