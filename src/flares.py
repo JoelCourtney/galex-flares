@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import query.flares
 import query.lightcurves
 import query.misc
+import query.sources
 import numpy as np
 import math
 
@@ -79,28 +80,17 @@ def calculate_energy(flare):
 
 def calculate_all_energies():
     energies = []
-    flares = data.get_good_flares()
+    flares = query.flares.get_good_flares()
     discarded = 0
     for flare in flares:
         energy = calculate_energy(flare)
         if energy and not math.isnan(energy):
             query.flares.set_energy(flare['FlareID'], energy)
-            energies.append(calculate_energy(flare))
+            energies.append(energy)
         else:
             discarded += 1
     print("Discarded: " + str(discarded))
     print(np.median(energies))
-
-
-def plot_energies():
-    energies = [energy['Energy'] for energy in data.get_all_energies()]
-    print(energies)
-    plt.hist(energies)
-    plt.gca().set_xscale('log')
-    plt.xlabel('NUV Energy of Flare (ergs)')
-    plt.ylabel('# Occurances')
-    plt.title('Energy Distribution of Flares')
-    plt.show()
 
 
 def show_flares_for_source(Source):
@@ -139,4 +129,5 @@ def auto_detect(sourceID):
 
 
 if __name__ == '__main__':
-    auto_detect('COSMOS_MOS25-12')
+    # auto_detect('COSMOS_MOS25-12')
+    calculate_all_energies()

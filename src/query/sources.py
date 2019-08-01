@@ -79,10 +79,24 @@ def set_field(sourceID, field, value):
         db.rollback()
 
 
-def get_distance(sourceID): # IN PARSECS
-    par = get_parallax(sourceID)
-    if par != None:
-        return 1000 / par
+def get_distance(SourceID): # IN PARSECS
+    if isinstance(SourceID, str):
+        try:
+            query = "SELECT Distance FROM Sources WHERE SourceID = '%s';" % SourceID
+            print(query)
+            cursor.execute(query)
+            return float(cursor.fetchone()['Distance'])
+        except Exception as e:
+            print("Source ID not found")
+            print(e)
+            return float('nan')
     else:
-        # do sdss things
-        return float('nan')
+        try:
+            query = "SELECT Distance FROM Sources WHERE RowNum = %d;" % SourceID
+            print(query)
+            cursor.execute(query)
+            return float(cursor.fetchone()['Distance'])
+        except Exception as e:
+            print("RowNum not found")
+            print(e)
+            return float('nan')
