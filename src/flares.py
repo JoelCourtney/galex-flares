@@ -1,17 +1,20 @@
 #! /usr/bin/env python3
 
 import matplotlib.pyplot as plt
-import data
+import query.flares
+import query.lightcurves
+import query.misc
+import query.sources
 import numpy as np
 import math
 
 
 def delimit_flare(sourceID):
-    data.delete_flares(sourceID)
-    flare = data.get_lightcurve(sourceID)
+    query.flares.delete_flares(sourceID)
+    flare = query.lightcurves.get_lightcurve(sourceID)
     if flare.empty:
         return False
-    exps = data.get_exposures(sourceID)
+    exps = query.lightcurves.get_exposures(sourceID)
     for r in range(len(exps)):
         times = []
 
@@ -41,9 +44,9 @@ def delimit_flare(sourceID):
                 plt.ylim(top=1.e-14)
             plt.show()
             if len(times) == 1:
-                data.insert_flare(sourceID, False, t0, t1)
+                query.flares.insert_flare(sourceID, False, t0, t1)
             elif len(times) == 4:
-                data.insert_flare(sourceID, True, times[0], times[1], times[2], times[3])
+                query.flares.insert_flare(sourceID, True, times[0], times[1], times[2], times[3])
         else:
             print("No data in exposure")
     return True
@@ -54,27 +57,22 @@ def delimit_all_flares():
     print("Close window = no flare")
     print("One click = bad flare")
     for i in range(1, 54):
-        source = data.get_source(i)
-        if data.create_lock(source['SourceID'], 'flares'):
+        source = query.sources.get_source(i)
+        if query.locks.create_lock(source['SourceID'], 'flares'):
             if delimit_flare(source['SourceID']):
-                data.change_lock(source['SourceID'], 'flares', 'complete')
+                query.locks.change_lock(source['SourceID'], 'flares', 'complete')
             else:
-                data.release_lock(source['SourceID'], 'flares')
+                query.locks.release_lock(source['SourceID'], 'flares')
 
 
 def calculate_energy(flare):
-    flare_lc = data.get_lightcurve_range(flare['SourceID'], flare['FlareStart'], flare['FlareEnd'])
+    flare_lc = query.lightcurves.get_lightcurve_range(flare['SourceID'], flare['FlareStart'], flare['FlareEnd'])
     # flare_lc.plot(x='t0', y='flux')
     # plt.show()
-    quiesent_lc = data.get_lightcurve_range(flare['SourceID'], flare['QuiesentStart'], flare['QuiesentEnd'])
+    quiesent_lc = query.lightcurves.get_lightcurve_range(flare['SourceID'], flare['QuiesentStart'], flare['QuiesentEnd'])
     quiesent_mean = quiesent_lc.mean(axis=0)['flux_bgsub']
     area = np.trapz(flare_lc['flux_mcatbgsub'] - quiesent_mean, x=flare_lc['t0'])
-    parallax = data.get_parallax(flare['SourceID'])
-    if parallax == None:
-        parallax = float('nan')
-        print(flare['SourceID'])
-    distance = 1000 / parallax
-    distance *= 3.086e18
+    distance = query.sources.get_distance(flare['SourceID']) * 3.086e18
     bandwidth = 1050
     energy = area * 4 * math.pi * (distance ** 2) * bandwidth
     return energy
@@ -82,42 +80,54 @@ def calculate_energy(flare):
 
 def calculate_all_energies():
     energies = []
-    flares = data.get_good_flares()
+    flares = query.flares.get_good_flares()
     discarded = 0
     for flare in flares:
         energy = calculate_energy(flare)
         if energy and not math.isnan(energy):
-            data.set_energy(flare['FlareID'], energy)
-            energies.append(calculate_energy(flare))
+            query.flares.set_energy(flare['FlareID'], energy)
+            energies.append(energy)
         else:
             discarded += 1
     print("Discarded: " + str(discarded))
     print(np.median(energies))
 
 
-def plot_energies():
-    energies = [energy['Energy'] for energy in data.get_all_energies()]
-    print(energies)
-    plt.hist(energies)
-    plt.gca().set_xscale('log')
-    plt.xlabel('NUV Energy of Flare (ergs)')
-    plt.ylabel('# Occurances')
-    plt.title('Energy Distribution of Flares')
-    plt.show()
-
-
 def show_flares_for_source(Source):
-    flares = data.get_flares_for_source(Source)
+    flares = query.flares.get_good_flares_for_source(Source)
     for flare in flares:
-        lc = data.get_lightcurve_range(flare['SourceID'], flare['FlareStart']-500, flare['FlareEnd']+500)
+        print(flare['FlareID'])
+        lc = query.lightcurves.get_lightcurve_range(flare['SourceID'], flare['FlareStart']-500, flare['FlareEnd']+500)
         lc.plot(x='t0', y='flux')
         plt.show()
 
 
+def show_all_good_flares():
+    flares = query.flares.get_good_flares()
+    for flare in flares:
+        print(flare['SourceID'])
+        print(flare['FlareID'])
+        lc = query.lightcurves.get_lightcurve_range(flare['SourceID'], flare['FlareStart']-500, flare['FlareEnd']+500)
+        print(lc)
+        if not lc.empty:
+            lc.plot(x='t0', y='flux')
+            plt.show()
+
+
+def auto_detect(sourceID):
+    lc = query.lightcurves.get_lightcurve(sourceID)
+    t = (2*np.std(lc[['flux']]) + np.mean(lc[['flux']])).flux
+    exps = query.misc.get_exposures(sourceID)
+    for i in range(len(exps)):
+        exp = exps.iloc[i]
+        partial_lc = lc.loc[(lc['t0'] >= exp['t0']) & (lc['t1'] <= exp['t1'])]
+        if (partial_lc['flux'] > t).any():
+            print(i)
+            partial_lc.plot(x='t0', y=['flux', 'flux_bgsub'])
+            plt.plot([exp['t0'], exp['t1']], [t, t])
+            plt.show()
+
+
 if __name__ == '__main__':
-    # calculate_all_energies()
-    plot_energies()
-    # flare = data.get_flare(6)
-    # show_flares_for_source('COSMOS_MOS22-09')
-    # print(calculate_energy(flare))
-    # delimit_all_flares()
+    # auto_detect('COSMOS_MOS25-12')
+    calculate_all_energies()

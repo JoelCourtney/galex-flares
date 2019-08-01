@@ -1,12 +1,15 @@
 #! /usr/bin/env python3
 
-import data as data
 import json
 import pandas as pd
-# import gaia
 from gPhoton import gAperture
 import os
 import math
+import query.gaia
+import query.sources
+import query.lightcurves
+import query.misc
+import numpy as np
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -25,55 +28,93 @@ def sources():
             info = json.load(file)
         galexRA = info['NUV']['nearest_source']['skypos'][0]
         galexDE = info['NUV']['nearest_source']['skypos'][1]
-        r = gaia.query(galexRA, galexDE)
-        data.insert_source(row['ID'],row['RAdeg'],row['DEdeg'],galexRA,galexDE,r['source_id'][0],r['ra'][0],r['dec'][0],r['parallax'][0])
+        r = query.gaia.query(galexRA, galexDE)
+        query.sources.insert_source(row['ID'], row['RAdeg'], row['DEdeg'], galexRA, galexDE, r['source_id'][0],
+                                    r['ra'][0], r['dec'][0], r['parallax'][0])
 
 
 def lightcurve(SourceID):
-    source = data.get_source(SourceID)
-    RA = float(source['GalexRA'])
-    DE = float(source['GalexDE'])
-    outFile = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
-    ap = data.get_parameter('ApertureRadius')
-    annIn = data.get_parameter('AnnulusInnerRadius')
-    annOut = data.get_parameter('AnnulusOuterRadius')
-    gAperture(band='NUV', skypos=[RA,DE], stepsz=10,
-        csvfile=outFile, radius=ap,
-        annulus=[annIn, annOut], verbose=3)
+    source = query.sources.get_source(SourceID)
+    ra = float(source['GalexRA'])
+    de = float(source['GalexDE'])
+    out_file = '../data/lightcurves/' + SourceID + '-lightcurve.csv'
+    ap = query.misc.get_parameter('ApertureRadius')
+    ann_in = query.misc.get_parameter('AnnulusInnerRadius')
+    ann_out = query.misc.get_parameter('AnnulusOuterRadius')
+    gAperture(band='NUV', skypos=[ra, de], stepsz=10,
+              csvfile=out_file, radius=ap,
+              annulus=[ann_in, ann_out], verbose=3)
     # data.drop_table(SourceID + '_lightcurve', True, True)
     # data.refresh_connection()
-    # data.create_lightcurve_table(SourceID, pd.read_csv(outFile))
+    # data.create_lightcurve_table(SourceID, pd.read_csv(out_file))
+
+
+def incremental_lightcurve(sourceID):
+    source = query.sources.get_source(sourceID)
+    ra = float(source['GalexRA'])
+    de = float(source['GalexDE'])
+    ap = query.misc.get_parameter('ApertureRadius')
+    ann_in = query.misc.get_parameter('AnnulusInnerRadius')
+    ann_out = query.misc.get_parameter('AnnulusOuterRadius')
+    dir_path = '../data/lightcurves/' + sourceID
+    if not os.path.exists(dir_path):
+        os.mkdir(dir_path)
+    start = len(os.listdir(dir_path))
+    exps = query.misc.get_exposures(sourceID)
+    for i in range(start, len(exps)):
+        exp = exps.iloc[i]
+        out_file = dir_path + '/exposure-' + str(i) + '.csv'
+        gAperture(band='NUV', skypos=[ra, de], stepsz=10, trange=[exp['t0'], exp['t1']],
+                  csvfile=out_file, radius=ap,
+                  annulus=[ann_in, ann_out], verbose=3)
 
 
 def all_lightcurves():
     for i in range(1, 54):
-        source = data.get_source(i)
-        if data.get_lock_status(source['SourceID'], 'lightcurve') is None:
-            data.create_lock(source['SourceID'], 'lightcurve')
+        source = query.sources.get_source(i)
+        if query.locks.get_lock_status(source['SourceID'], 'lightcurve') is None:
+            query.locks.create_lock(source['SourceID'], 'lightcurve')
             lightcurve(source['SourceID'])
-            data.change_lock(source['SourceID'], 'lightcurve', 'complete')
+            query.locks.change_lock(source['SourceID'], 'lightcurve', 'complete')
 
 
 def lightcurve_table():
     for i in range(1, 54):
-        source = data.get_source(i)
+        source = query.sources.get_source(i)
         file = '../data/lightcurves/' + source['SourceID'] + '-lightcurve.csv'
         if os.path.exists(file):
-            data.insert_lightcurve(source['SourceID'])
+            query.lightcurves.insert_lightcurve(source['SourceID'])
 
 
-def set_heights():
+def extra_source_data():
+    def calc_mag(app_mag, par):
+        return app_mag + 5 * (1+math.log10(par/1000.))
     for i in range(1, 54):
-        source = data.get_source(i)
+        source = query.sources.get_source(i)
+        gaia_obj = query.gaia.query_id(source['GaiaID'])[0]
+        app_mag = gaia_obj['phot_g_mean_mag']
+        color = gaia_obj['bp_rp']
+        query.sources.set_field(source['SourceID'], 'AppMag', app_mag)
+        query.sources.set_field(source['SourceID'], 'Color', color)
+        lc = query.lightcurves.get_lightcurve(source['SourceID'])
+        sd = np.std(lc[['flux']])['flux']
+        mn = np.mean(lc[['flux']])['flux']
+        query.sources.set_field(source['SourceID'], 'FluxMean', mn)
+        query.sources.set_field(source['SourceID'], 'FluxSD', sd)
         parallax = source['Parallax']
         if parallax is not None:
             dist = 1000.0 / float(parallax)
             height = math.sin(math.radians(float(source['GalexDE']))) * dist
-            print(height)
+            query.sources.set_field(source['SourceID'], 'Distance', dist)
+            query.sources.set_field(source['SourceID'], 'Height', height)
+            abs_mag = calc_mag(app_mag, float(parallax))
+            query.sources.set_field(source['SourceID'], 'AbsMag', abs_mag)
 
 
 if __name__ == '__main__':
-    all_lightcurves()
+    # all_lightcurves()
+    # incremental_lightcurve('GROTH_MOS05-00')
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()
+    extra_source_data()
