@@ -58,9 +58,9 @@ def create_plot():
             mags.pop(i)
             colors.pop(i)
     plt.rc('font', family='serif', size=14)
-    fig = plt.figure(figsize=(10, 8))
+    fig = plt.figure(figsize=(6, 5))
     plt.scatter(colors, mags, color='#EE6677', alpha=0.9)
-    plt.xlabel('Bp-Rp')
+    plt.xlabel('Gaia $G_{bp} - G_{rp}$')
     plt.ylabel('Absolute M_G')
     plt.axis([-1,4,15,-5])
     i = 0

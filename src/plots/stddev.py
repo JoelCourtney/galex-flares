@@ -15,10 +15,10 @@ def create_plot():
             colors.pop(i)
             devs.pop(i)
     plt.rc('font', family='serif', size=14)
-    fig = plt.figure(figsize=(10, 8))
+    fig = plt.figure(figsize=(5, 4))
     plt.scatter(colors, devs, color='#EE6677', alpha=0.9)
-    plt.xlabel('Bp-Rp')
-    plt.ylabel('Flux StdDev')
+    plt.xlabel('Gaia $G_{bp} - G_{rp}$')
+    plt.ylabel('Power StdDev (W/Hz)')
     plt.ylim([np.min(devs), np.max(devs)])
     plt.show()
 
