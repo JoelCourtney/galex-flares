@@ -47,7 +47,7 @@ pearl2 = abs_mag(12.62, 2.873) # KIC11551430
 col_pearl2 = 0.88
 
 
-def create_hr_diagram():
+def create_plot():
     sources = query.sources.get_all_sources()
     ids = [source['GaiaID'] for source in sources]
     gaia_objs = query.gaia.query_ids(ids)
@@ -86,4 +86,4 @@ def create_hr_diagram():
 
 
 if __name__ == '__main__':
-    create_hr_diagram()
+    create_plot()

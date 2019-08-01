@@ -7,7 +7,9 @@ import os
 import math
 import query.gaia
 import query.sources
+import query.lightcurves
 import query.misc
+import numpy as np
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -84,19 +86,35 @@ def lightcurve_table():
             query.lightcurves.insert_lightcurve(source['SourceID'])
 
 
-def set_heights():
+def extra_source_data():
+    def calc_mag(app_mag, par):
+        return app_mag + 5 * (1+math.log10(par/1000.))
     for i in range(1, 54):
         source = query.sources.get_source(i)
+        gaia_obj = query.gaia.query_id(source['GaiaID'])[0]
+        app_mag = gaia_obj['phot_g_mean_mag']
+        color = gaia_obj['bp_rp']
+        query.sources.set_field(source['SourceID'], 'AppMag', app_mag)
+        query.sources.set_field(source['SourceID'], 'Color', color)
+        lc = query.lightcurves.get_lightcurve(source['SourceID'])
+        sd = np.std(lc[['flux']])['flux']
+        mn = np.mean(lc[['flux']])['flux']
+        query.sources.set_field(source['SourceID'], 'FluxMean', mn)
+        query.sources.set_field(source['SourceID'], 'FluxSD', sd)
         parallax = source['Parallax']
         if parallax is not None:
             dist = 1000.0 / float(parallax)
             height = math.sin(math.radians(float(source['GalexDE']))) * dist
-            print(height)
+            query.sources.set_field(source['SourceID'], 'Distance', dist)
+            query.sources.set_field(source['SourceID'], 'Height', height)
+            abs_mag = calc_mag(app_mag, float(parallax))
+            query.sources.set_field(source['SourceID'], 'AbsMag', abs_mag)
 
 
 if __name__ == '__main__':
     # all_lightcurves()
-    incremental_lightcurve('GROTH_MOS05-00')
+    # incremental_lightcurve('GROTH_MOS05-00')
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()
+    extra_source_data()

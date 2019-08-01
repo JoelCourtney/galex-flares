@@ -21,3 +21,11 @@ def query_ids(ids):
     job = Gaia.launch_job(query)
     r = job.get_results()
     return r
+
+
+def query_id(id):
+    query = "SELECT * FROM gaiadr2.gaia_source WHERE source_id = %i;" % id
+    print(query)
+    job = Gaia.launch_job(query)
+    r = job.get_results()
+    return r

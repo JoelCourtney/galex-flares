@@ -67,14 +67,14 @@ def get_parallax(SourceID):
             print(e)
 
 
-def set_source_height(sourceID, height):
+def set_field(sourceID, field, value):
     try:
-        query = "UPDATE TABLE Sources SET Height = %f WHERE SourceID = '%s';" % (height, sourceID)
+        query = "UPDATE Sources SET %s = %.30f WHERE SourceID = '%s';" % (field, value, sourceID)
         print(query)
         cursor.execute(query)
         db.commit()
     except Exception as e:
-        print("could not set height")
+        print("could not set %s" % field)
         print(e)
         db.rollback()
 

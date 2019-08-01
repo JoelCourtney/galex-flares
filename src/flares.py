@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import query.flares
 import query.lightcurves
+import query.misc
 import numpy as np
 import math
 
@@ -123,11 +124,19 @@ def show_all_good_flares():
             plt.show()
 
 
+def auto_detect(sourceID):
+    lc = query.lightcurves.get_lightcurve(sourceID)
+    t = (2*np.std(lc[['flux']]) + np.mean(lc[['flux']])).flux
+    exps = query.misc.get_exposures(sourceID)
+    for i in range(len(exps)):
+        exp = exps.iloc[i]
+        partial_lc = lc.loc[(lc['t0'] >= exp['t0']) & (lc['t1'] <= exp['t1'])]
+        if (partial_lc['flux'] > t).any():
+            print(i)
+            partial_lc.plot(x='t0', y=['flux', 'flux_bgsub'])
+            plt.plot([exp['t0'], exp['t1']], [t, t])
+            plt.show()
+
+
 if __name__ == '__main__':
-    # calculate_all_energies()
-    # plot_energies()
-    # flare = data.get_flare(6)
-    # show_flares_for_source('COSMOS_MOS25-12')
-    # print(calculate_energy(flare))
-    # delimit_all_flares()
-    show_all_good_flares()
+    auto_detect('COSMOS_MOS25-12')
