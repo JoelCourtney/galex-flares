@@ -19,7 +19,7 @@ def create_plot():
     plt.scatter(colors, devs, color='#EE6677', alpha=0.9)
     plt.xlabel('Gaia $G_{bp} - G_{rp}$')
     plt.ylabel('Power StdDev (W/Hz)')
-    plt.ylim([np.min(devs), np.max(devs)])
+    plt.ylim([0, 5E28])
     plt.show()
 
 
