@@ -114,20 +114,68 @@ def show_all_good_flares():
             plt.show()
 
 
-def auto_detect(sourceID):
-    lc = query.lightcurves.get_lightcurve(sourceID)
-    t = (2*np.std(lc[['flux']]) + np.mean(lc[['flux']])).flux
-    exps = query.misc.get_exposures(sourceID)
+def auto_detect(lc, mean, thresh, exps):
+    count = 0
     for i in range(len(exps)):
         exp = exps.iloc[i]
         partial_lc = lc.loc[(lc['t0'] >= exp['t0']) & (lc['t1'] <= exp['t1'])]
-        if (partial_lc['flux'] > t).any():
-            print(i)
+        flags = partial_lc['flux'] > thresh
+        if flags.any():
+            true_flags = flags[flags==True]
+            first_flag, last_flag = true_flags.first_valid_index(), true_flags.last_valid_index()
+            while first_flag > partial_lc.first_valid_index():
+                first_flag -= 1
+                if partial_lc['flux'][first_flag] < mean:
+                    break
+            while last_flag < partial_lc.last_valid_index():
+                last_flag += 1
+                if partial_lc['flux'][last_flag] < mean:
+                    break
             partial_lc.plot(x='t0', y=['flux', 'flux_bgsub'])
-            plt.plot([exp['t0'], exp['t1']], [t, t])
+            plt.plot([exp['t0'], exp['t1']], [thresh, thresh], color='green', alpha=0.5)
+            plt.plot([exp['t0'], exp['t1']], [mean, mean], color='green', alpha=0.5)
+            ymin, ymax = plt.ylim()
+            plt.plot([partial_lc['t0'][first_flag], partial_lc['t0'][first_flag]], [ymin, ymax], color='gray', alpha=0.5)
+            plt.plot([partial_lc['t1'][last_flag], partial_lc['t1'][last_flag]], [ymin, ymax], color='gray', alpha=0.5)
             plt.show()
+            count += 1
+    print(count)
+    return count
+
+
+def auto_detect_all():
+    ids = []
+    lcs = []
+    for id in query.sources.get_ids():
+        if id['SourceID'] != 'gj_3685a':
+            lc = query.lightcurves.get_lightcurve_fluxes(id['SourceID'])
+            mean = np.mean(lc[['flux']])['flux']
+            lc['flux'] /= mean
+            lcs.append(lc)
+            ids.append(id['SourceID'])
+    sd = 0
+    n = 0
+    for lc in lcs:
+        for f in lc['flux'].tolist():
+            try:
+                sd += (f-1)**2
+            except Exception as e:
+                print(f['flux'])
+                print(sd)
+                print(e)
+                return
+            n += 1
+    sd = math.sqrt(sd/(n-1))
+    thresh = 1+4.5*sd
+    count = 0
+    for i in range(len(lcs)):
+        id = ids[i]
+        lc = lcs[i]
+        exps = query.misc.get_exposures(id)
+        count += auto_detect(lc, 1, thresh, exps)
+    print(count)
 
 
 if __name__ == '__main__':
-    # auto_detect('COSMOS_MOS25-12')
-    calculate_all_energies()
+    auto_detect_all()
+    # calculate_all_energies()

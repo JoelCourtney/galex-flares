@@ -113,8 +113,8 @@ def extra_source_data():
 
 if __name__ == '__main__':
     # all_lightcurves()
-    # incremental_lightcurve('GROTH_MOS05-00')
+    incremental_lightcurve('GROTH_MOS05-00')
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()
-    extra_source_data()
+    # extra_source_data()

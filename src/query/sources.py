@@ -100,3 +100,14 @@ def get_distance(SourceID): # IN PARSECS
             print("RowNum not found")
             print(e)
             return float('nan')
+
+
+def get_ids():
+    try:
+        query = "SELECT SourceID FROM Sources;"
+        print(query)
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print("count not get sourceIDs")
+        print(e)

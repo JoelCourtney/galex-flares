@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-MS_color = [-0.037, 0.377, 0.82, 0.98,1.84,2.09,2.25,2.49,3.13,3.95,4.8]  #http://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+# http://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+MS_color = [-0.037, 0.377, 0.82, 0.98, 1.84, 2.09, 2.25, 2.49, 3.13, 3.95, 4.8]
 MS_label = ['A0', 'F0', 'G2', 'K0', 'M0', 'M1', 'M2', 'M3', 'M4.5', 'M6', 'M8']
 
 

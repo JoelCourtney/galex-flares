@@ -42,6 +42,17 @@ def get_lightcurve(sourceID):
         print(e)
 
 
+def get_lightcurve_fluxes(sourceID):
+    try:
+        query = "SELECT t0, t1, flux, flux_bgsub FROM Lightcurves WHERE SourceID = '%s' ORDER BY t0 ASC LIMIT 100000;" % sourceID
+        print(query)
+        df = pd.read_sql(query, db)
+        return df
+    except Exception as e:
+        print("lightcurve query failed")
+        print(e)
+
+
 def get_lightcurve_range(sourceID, start, end):
     try:
         query = "SELECT * FROM Lightcurves WHERE (SourceID = '%s') AND (t0 >= %d) AND (t0 <= %d) ORDER BY t0 LIMIT 10000;" % (sourceID,start,end)
