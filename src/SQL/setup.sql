@@ -1,3 +1,5 @@
+use galex_flares;
+
 drop table if exists Sources;
 create table Sources (
 	RowNum INT NOT NULL AUTO_INCREMENT,
@@ -14,7 +16,6 @@ create table Sources (
 );
 alter table Sources add RowNum INT AUTO_INCREMENT;
 
-drop table if exists Flares;
 create table Flares (
 	FlareID INT NOT NULL AUTO_INCREMENT,
 	SourceID VARCHAR(20) NOT NULL,
@@ -44,11 +45,12 @@ INSERT INTO Parameters (Parameter, Val) VALUES ('ApertureRadius', 0.0045);
 INSERT INTO Parameters (Parameter, Val) VALUES ('AnnulusInnerRadius', 0.005);
 INSERT INTO Parameters (Parameter, Val) VALUES ('AnnulusOuterRadius', 0.006);
 
+drop table Lightcurves;
 CREATE TABLE Lightcurves (
 			SourceID VARCHAR(20) NOT NULL,
-            t0 DEC(15,5),
-            t1 DEC(15,5),
-            t_mean DEC(15,5),
+            t0 DEC(17,7),
+            t1 DEC(17,7),
+            t_mean DEC(17,7),
             t0_data DEC(15,5),
             t1_data DEC(15,5),
             cps_bgsub FLOAT(24),
@@ -87,5 +89,23 @@ CREATE TABLE Lightcurves (
             deccent FLOAT(24),
             q_mean FLOAT(24),
             flags INT,
-            PRIMARY KEY (SourceID, t0)
+            PRIMARY KEY (SourceID, t0),
+            FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
             );
+
+CREATE TABLE SDSS (
+	SourceID VARCHAR(20) NOT NULL,
+    SDSSID CHAR(19) NOT NULL,
+    u FLOAT(24),
+    g FLOAT(24),
+    r FLOAT(24),
+    i FLOAT(24),
+    z FLOAT(24),
+    err_u FLOAT(24),
+    err_g FLOAT(24),
+    err_r FLOAT(24),
+    err_i FLOAT(24),
+    err_z FLOAT(24),
+    PRIMARY KEY (SDSSID),
+    FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
+);

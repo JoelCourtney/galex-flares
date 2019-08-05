@@ -1,8 +1,6 @@
 import query.sdss
 import numpy as np
 import math
-from pyraf import iraf
-from iraf import noao, imred, ccdred
 
 
 mu = [
@@ -34,10 +32,6 @@ def get_sdss_spectral_type(sourceID):
     return [(1./(2.*math.pi*math.sqrt(np.linalg.norm(sigma[i])))) * math.exp((-1./2)*np.transpose(x-mu[i])*np.linalg.inv(sigma[i])*(x-mu[i])) for i in range(8)]
 
 
-def pyraf_test():
-    iraf.imexamine("XMMLSS_MOS01-07.0051b.fits")
-
-
 if __name__ == '__main__':
     # print(get_sdss_spectral_type('COSMOS_MOS22-09'))
-    pyraf_test()
+    pass
