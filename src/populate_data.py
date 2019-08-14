@@ -10,6 +10,7 @@ import query.sources
 import query.lightcurves
 import query.misc
 import numpy as np
+from shutil import copyfile
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -111,9 +112,33 @@ def extra_source_data():
             query.sources.set_field(source['SourceID'], 'AbsMag', abs_mag)
 
 
+def combine_increments(sourceID):
+    dir_path = '../data/lightcurves/' + sourceID
+    dest_path = '../data/lightcurves/' + sourceID + '-lightcurve.csv'
+    if not os.path.exists(dir_path):
+        os.mkdir(dir_path)
+    num = len(os.listdir(dir_path))
+    copyfile(dir_path + '/exposure-0.csv', dest_path)
+    f = open(dest_path, "a+")
+    for i in range(1, num):
+        text = [6]
+        try:
+            l = open(dir_path + '/exposure-' + str(i) + '.csv', 'r')
+            text = l.readlines()
+            l.close()
+        except:
+            pass
+        text.pop(0)
+        for line in text:
+            f.write(line)
+    f.close()
+
+
 if __name__ == '__main__':
     # all_lightcurves()
-    incremental_lightcurve('GROTH_MOS05-00')
+    # incremental_lightcurve('GROTH_MOS05-00')
+    combine_increments('GROTH_MOS05-00')
+    query.lightcurves.insert_lightcurve('GROTH_MOS05-00')
     # lightcurve('GROTH_MOS01-21')
     # sources()
     # lightcurve_table()

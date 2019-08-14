@@ -1,0 +1,28 @@
+# Wed 13:06:11 14-Aug-2019
+begin	aperture flat_zero_corrected/CDFS_MOS04-03.0073b 1 1024. 152.8703
+	image	flat_zero_corrected/CDFS_MOS04-03.0073b
+	aperture	1
+	beam	1
+	center	1024. 152.8703
+	low	-1023. -5.
+	high	1024. 5.
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 2
+		sample -30:-20,20:30
+		naverage -100
+		niterate 3
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		4.
+		2034.
+		-3.522177
+		1.350226
+

@@ -1,0 +1,28 @@
+# Thu 16:23:10 08-Aug-2019
+begin	aperture zYZCMi.0060r.fits. 1 1024. 261.0075
+	image	zYZCMi.0060r.fits.
+	aperture	1
+	beam	1
+	center	1024. 261.0075
+	low	-1023. -11.87134
+	high	1024. 8.248871
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 1
+		sample  -30:-20,20:30
+		naverage -3
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		4.
+		2044.
+		-0.006201353
+		4.302679
+

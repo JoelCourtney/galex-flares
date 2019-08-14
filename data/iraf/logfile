@@ -1,0 +1,2014 @@
+
+Aug  8 15:37: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001r.fits
+        Bias.0002r.fits
+        Bias.0003r.fits
+        Bias.0004r.fits
+        Bias.0005r.fits
+        Bias.0006r.fits
+        Bias.0007r.fits
+        Bias.0008r.fits
+        Bias.0009r.fits
+        Bias.0010r.fits
+        Bias.0011r.fits
+        Bias.0012r.fits
+        Bias.0013r.fits
+        Bias.0014r.fits
+        Bias.0015r.fits
+
+  Output image = masterBiasRed, ncombine = 15
+CDFS_MOS00-41.0046r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+CDFS_MOS00-41.0046r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.4375
+masterBiasRed.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+masterBiasRed.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=119.6758
+CDFS_MOS00-41.0046r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+CDFS_MOS00-41_henear.0047r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+CDFS_MOS00-41_henear.0047r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.3563
+CDFS_MOS00-41_henear.0047r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+CDFS_MOS02-20.0045r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+CDFS_MOS02-20.0045r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.4294
+CDFS_MOS02-20.0045r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+CDFS_MOS04-03.0073r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+CDFS_MOS04-03.0073r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=122.6047
+CDFS_MOS04-03.0073r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+Feige110.0038r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+Feige110.0038r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=122.9326
+Feige110.0038r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+Feige110.0039r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+Feige110.0039r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=122.844
+Feige110.0039r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+Feige110.0054r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+Feige110.0054r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.2803
+Feige110.0054r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+Feige110_henear.0040r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+Feige110_henear.0040r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=122.6552
+Feige110_henear.0040r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+Feige110_henear.0055r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+Feige110_henear.0055r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.2812
+Feige110_henear.0055r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatB.0030r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatB.0030r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=15755.5
+FlatB.0030r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatB.0031r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatB.0031r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=16239.98
+FlatB.0031r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatB.0032r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatB.0032r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=14990.
+FlatB.0032r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0016r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0016r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=119.8948
+FlatR.0016r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0017r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0017r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=119.9229
+FlatR.0017r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0018r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0018r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=119.9092
+FlatR.0018r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0019r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0019r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.001
+FlatR.0019r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0020r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0020r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.0157
+FlatR.0020r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0021r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0021r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.044
+FlatR.0021r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0023r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0023r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.532
+FlatR.0023r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0024r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0024r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.5505
+FlatR.0024r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0025r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0025r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.5
+FlatR.0025r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0026r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0026r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.5195
+FlatR.0026r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0027r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0027r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.488
+FlatR.0027r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0028r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0028r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.4375
+FlatR.0028r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+FlatR.0029r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+FlatR.0029r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.4453
+FlatR.0029r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+HeNeAr_B.0033r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+HeNeAr_B.0033r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=121.9484
+HeNeAr_B.0033r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+HeNeAr_B.0034r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+HeNeAr_B.0034r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=121.9416
+HeNeAr_B.0034r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+HeNeAr_R.0035r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+HeNeAr_R.0035r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.2383
+HeNeAr_R.0035r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+HeNeAr_R.0036r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+HeNeAr_R.0036r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.3282
+HeNeAr_R.0036r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+HeNeAr_R.0037r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+HeNeAr_R.0037r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=120.3282
+HeNeAr_R.0037r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+VVDS22H_MOS01-12.0041r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+VVDS22H_MOS01-12.0041r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=122.9015
+VVDS22H_MOS01-12.0041r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+VVDS22H_MOS05-06.0042r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+VVDS22H_MOS05-06.0042r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.1789
+VVDS22H_MOS05-06.0042r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+VVDS22H_MOS05-09.0043r.fits: Aug  8 15:58 Trim data section is [1:2048,1:560]
+VVDS22H_MOS05-09.0043r.fits: Aug  8 15:58 Overscan section is [2051:2090,1:560] with mean=123.4139
+VVDS22H_MOS05-09.0043r.fits: Aug  8 15:58 Zero level correction image is masterBiasRed.fits
+VVDS22H_MOS05-09_henear.0044r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+VVDS22H_MOS05-09_henear.0044r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.3974
+VVDS22H_MOS05-09_henear.0044r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS00-06.0070r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS00-06.0070r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=122.2461
+XMMLSS_MOS00-06.0070r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS00-06.0071r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS00-06.0071r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=122.2687
+XMMLSS_MOS00-06.0071r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS00-06_henear.0072r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS00-06_henear.0072r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=122.2263
+XMMLSS_MOS00-06_henear.0072r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS01-06.0050r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS01-06.0050r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.5615
+XMMLSS_MOS01-06.0050r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS01-07.0051r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS01-07.0051r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2227
+XMMLSS_MOS01-07.0051r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS02-12.0056r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS02-12.0056r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.0203
+XMMLSS_MOS02-12.0056r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS02-12.0069r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS02-12.0069r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=122.4062
+XMMLSS_MOS02-12.0069r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS06-08.0048r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS06-08.0048r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.0193
+XMMLSS_MOS06-08.0048r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS06-13.0052r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS06-13.0052r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.1357
+XMMLSS_MOS06-13.0052r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS06-13_henear.0053r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS06-13_henear.0053r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.0515
+XMMLSS_MOS06-13_henear.0053r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+XMMLSS_MOS06-22.0049r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+XMMLSS_MOS06-22.0049r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=125.0156
+XMMLSS_MOS06-22.0049r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0057r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0057r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.3086
+YZCMi.0057r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0058r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0058r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2744
+YZCMi.0058r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0059r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0059r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2656
+YZCMi.0059r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0060r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0060r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2002
+YZCMi.0060r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0061r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0061r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.1377
+YZCMi.0061r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0062r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0062r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2346
+YZCMi.0062r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0063r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0063r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2178
+YZCMi.0063r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0064r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0064r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2627
+YZCMi.0064r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0065r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0065r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2576
+YZCMi.0065r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0066r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0066r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.1993
+YZCMi.0066r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi.0067r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi.0067r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2039
+YZCMi.0067r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+YZCMi_henear.0068r.fits: Aug  8 15:59 Trim data section is [1:2048,1:560]
+YZCMi_henear.0068r.fits: Aug  8 15:59 Overscan section is [2051:2090,1:560] with mean=123.2117
+YZCMi_henear.0068r.fits: Aug  8 15:59 Zero level correction image is masterBiasRed.fits
+
+Aug  8 16:06: IMCOMBINE
+  combine = median, scale = mode, zero = none, weight = none
+  reject = minmax, nlow = 1, nhigh = 1
+  blank = 1.
+                Images     Mode  Scale
+  zFlatR.0016r.fits..fits      1. 92.520
+  zFlatR.0017r.fits..fits      1. 92.520
+  zFlatR.0018r.fits..fits      1. 92.520
+  zFlatR.0019r.fits..fits      1. 92.520
+  zFlatR.0020r.fits..fits      1. 92.520
+  zFlatR.0021r.fits..fits      1. 92.520
+  zFlatR.0023r.fits..fits  171.14  0.541
+  zFlatR.0024r.fits..fits  170.63  0.542
+  zFlatR.0025r.fits..fits  170.68  0.542
+  zFlatR.0026r.fits..fits  169.16  0.547
+  zFlatR.0027r.fits..fits  170.69  0.542
+  zFlatR.0028r.fits..fits  171.24  0.540
+  zFlatR.0029r.fits..fits  173.23  0.534
+
+  Output image = masterFlatRed, ncombine = 13
+zCDFS_MOS00-41.0046r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zCDFS_MOS00-41_henear.0047r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zCDFS_MOS02-20.0045r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zCDFS_MOS04-03.0073r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zFeige110.0038r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zFeige110.0039r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zFeige110.0054r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zFeige110_henear.0040r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+zFeige110_henear.0055r.fits.: Aug  8 16:14 Flat field image is normMasterFlatRed with scale=1.
+
+Aug 12 12:10: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001b.fits
+        Bias.0002b.fits
+        Bias.0003b.fits
+        Bias.0004b.fits
+        Bias.0005b.fits
+        Bias.0006b.fits
+        Bias.0007b.fits
+        Bias.0008b.fits
+        Bias.0009b.fits
+        Bias.0010b.fits
+        Bias.0011b.fits
+        Bias.0012b.fits
+        Bias.0013b.fits
+        Bias.0014b.fits
+        Bias.0015b.fits
+
+  Output image = blue_zero_master, ncombine = 15
+
+Aug 12 12:11: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001b.fits
+        Bias.0002b.fits
+        Bias.0003b.fits
+        Bias.0004b.fits
+        Bias.0005b.fits
+        Bias.0006b.fits
+        Bias.0007b.fits
+        Bias.0008b.fits
+        Bias.0009b.fits
+        Bias.0010b.fits
+        Bias.0011b.fits
+        Bias.0012b.fits
+        Bias.0013b.fits
+        Bias.0014b.fits
+        Bias.0015b.fits
+
+  Output image = blue_zero_master, ncombine = 15
+
+Aug 12 12:13: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001r.fits
+        Bias.0002r.fits
+        Bias.0003r.fits
+        Bias.0004r.fits
+        Bias.0005r.fits
+        Bias.0006r.fits
+        Bias.0007r.fits
+        Bias.0008r.fits
+        Bias.0009r.fits
+        Bias.0010r.fits
+        Bias.0011r.fits
+        Bias.0012r.fits
+        Bias.0013r.fits
+        Bias.0014r.fits
+        Bias.0015r.fits
+
+  Output image = red_zero_master, ncombine = 15
+
+Aug 12 12:15: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001b.fits
+        Bias.0002b.fits
+        Bias.0003b.fits
+        Bias.0004b.fits
+        Bias.0005b.fits
+        Bias.0006b.fits
+        Bias.0007b.fits
+        Bias.0008b.fits
+        Bias.0009b.fits
+        Bias.0010b.fits
+        Bias.0011b.fits
+        Bias.0012b.fits
+        Bias.0013b.fits
+        Bias.0014b.fits
+        Bias.0015b.fits
+
+  Output image = blue_zero_master, ncombine = 15
+
+Aug 12 12:15: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001r.fits
+        Bias.0002r.fits
+        Bias.0003r.fits
+        Bias.0004r.fits
+        Bias.0005r.fits
+        Bias.0006r.fits
+        Bias.0007r.fits
+        Bias.0008r.fits
+        Bias.0009r.fits
+        Bias.0010r.fits
+        Bias.0011r.fits
+        Bias.0012r.fits
+        Bias.0013r.fits
+        Bias.0014r.fits
+        Bias.0015r.fits
+
+  Output image = red_zero_master, ncombine = 15
+
+Aug 12 12:17: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001r.fits
+        Bias.0002r.fits
+        Bias.0003r.fits
+        Bias.0004r.fits
+        Bias.0005r.fits
+        Bias.0006r.fits
+        Bias.0007r.fits
+        Bias.0008r.fits
+        Bias.0009r.fits
+        Bias.0010r.fits
+        Bias.0011r.fits
+        Bias.0012r.fits
+        Bias.0013r.fits
+        Bias.0014r.fits
+        Bias.0015r.fits
+
+  Output image = red_zero_master, ncombine = 15
+
+Aug 12 12:19: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001b.fits
+        Bias.0002b.fits
+        Bias.0003b.fits
+        Bias.0004b.fits
+        Bias.0005b.fits
+        Bias.0006b.fits
+        Bias.0007b.fits
+        Bias.0008b.fits
+        Bias.0009b.fits
+        Bias.0010b.fits
+        Bias.0011b.fits
+        Bias.0012b.fits
+        Bias.0013b.fits
+        Bias.0014b.fits
+        Bias.0015b.fits
+
+  Output image = blue_zero_master, ncombine = 15
+
+Aug 12 13:25: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001b.fits
+        Bias.0002b.fits
+        Bias.0003b.fits
+        Bias.0004b.fits
+        Bias.0005b.fits
+        Bias.0006b.fits
+        Bias.0007b.fits
+        Bias.0008b.fits
+        Bias.0009b.fits
+        Bias.0010b.fits
+        Bias.0011b.fits
+        Bias.0012b.fits
+        Bias.0013b.fits
+        Bias.0014b.fits
+        Bias.0015b.fits
+
+  Output image = blue_zero_master.fits, ncombine = 15
+
+Aug 12 13:36: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+        Bias.0001r.fits
+        Bias.0002r.fits
+        Bias.0003r.fits
+        Bias.0004r.fits
+        Bias.0005r.fits
+        Bias.0006r.fits
+        Bias.0007r.fits
+        Bias.0008r.fits
+        Bias.0009r.fits
+        Bias.0010r.fits
+        Bias.0011r.fits
+        Bias.0012r.fits
+        Bias.0013r.fits
+        Bias.0014r.fits
+        Bias.0015r.fits
+
+  Output image = red_zero_master.fits, ncombine = 15
+
+Aug 12 14:21: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+  original/Bias.0001r.fits
+  original/Bias.0002r.fits
+  original/Bias.0003r.fits
+  original/Bias.0004r.fits
+  original/Bias.0005r.fits
+  original/Bias.0006r.fits
+  original/Bias.0007r.fits
+  original/Bias.0008r.fits
+  original/Bias.0009r.fits
+  original/Bias.0010r.fits
+  original/Bias.0011r.fits
+  original/Bias.0012r.fits
+  original/Bias.0013r.fits
+  original/Bias.0014r.fits
+  original/Bias.0015r.fits
+
+  Output image = masters/red_zero.fits, ncombine = 15
+
+Aug 12 14:22: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+  original/Bias.0001b.fits
+  original/Bias.0002b.fits
+  original/Bias.0003b.fits
+  original/Bias.0004b.fits
+  original/Bias.0005b.fits
+  original/Bias.0006b.fits
+  original/Bias.0007b.fits
+  original/Bias.0008b.fits
+  original/Bias.0009b.fits
+  original/Bias.0010b.fits
+  original/Bias.0011b.fits
+  original/Bias.0012b.fits
+  original/Bias.0013b.fits
+  original/Bias.0014b.fits
+  original/Bias.0015b.fits
+
+  Output image = masters/blue_zero.fits, ncombine = 15
+original/CDFS_MOS00-41.0046r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatB.0030r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatB.0031r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatB.0032r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0016r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0017r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0018r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0019r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0020r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0021r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0024r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0025r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0026r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0027r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0028r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/FlatR.0029r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0033r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0034r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0035r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0036r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0037r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS01-12.0041r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-06.0042r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09.0043r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0070r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0071r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-06.0050r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-07.0051r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0056r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0069r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-08.0048r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13.0052r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-22.0049r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0057r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0058r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0059r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0060r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0061r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0062r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0063r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0064r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0065r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0066r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0067r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/YZCMi_henear.0068r.fits: Aug 12 14:26 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41.0046b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS02-20.0045b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS04-03.0073b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0038b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0039b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0054b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0040b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0055b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0030b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0031b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0032b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0016b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0017b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0018b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0019b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0020b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0021b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0023b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0024b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0025b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0026b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0027b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0028b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/FlatR.0029b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0033b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0034b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0035b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0036b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0037b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS01-12.0041b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-06.0042b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09.0043b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0070b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0071b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-06.0050b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-07.0051b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0056b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0069b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-08.0048b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13.0052b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-22.0049b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0057b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0058b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0059b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0060b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0061b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0062b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0063b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0064b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0065b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0066b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0067b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/YZCMi_henear.0068b.fits: Aug 12 14:30 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41.0046b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS02-20.0045b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS04-03.0073b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0038b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0039b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0054b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0040b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0055b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0030b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0031b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0032b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0033b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0034b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0035b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0036b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0037b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS01-12.0041b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-06.0042b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09.0043b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0070b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0071b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-06.0050b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-07.0051b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0056b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0069b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-08.0048b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13.0052b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-22.0049b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0057b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0058b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0059b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0060b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0061b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0062b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0063b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0064b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0065b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0066b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0067b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/YZCMi_henear.0068b.fits: Aug 12 14:44 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41.0046r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0024r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0025r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0026r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0027r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0028r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/FlatR.0029r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0033r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0034r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0035r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0036r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0037r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS01-12.0041r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-06.0042r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09.0043r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0070r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0071r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-06.0050r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-07.0051r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0056r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0069r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-08.0048r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13.0052r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-22.0049r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0057r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0058r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0059r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0060r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0061r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0062r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0063r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0064r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0065r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0066r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0067r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+original/YZCMi_henear.0068r.fits: Aug 12 14:44 Zero level correction image is masters/red_zero.fits
+
+Aug 12 14:47: IMCOMBINE
+  combine = average, scale = mode, zero = none, weight = none
+  reject = avsigclip, mclip = yes, nkeep = 1
+  lsigma = 3., hsigma = 3.
+  blank = 1.
+                Images     Mode  Scale
+  zero_corrected/FlatR.0023r.fits    154.  0.990
+  zero_corrected/FlatR.0024r.fits    154.  0.990
+  zero_corrected/FlatR.0025r.fits    151.  1.010
+  zero_corrected/FlatR.0026r.fits   151.5  1.007
+  zero_corrected/FlatR.0027r.fits    152.  1.003
+  zero_corrected/FlatR.0028r.fits    152.  1.003
+  zero_corrected/FlatR.0029r.fits    153.  0.997
+
+  Output image = masters/red_flat.fits, ncombine = 7
+
+Aug 12 14:48: IMCOMBINE
+  combine = average, scale = mode, zero = none, weight = none
+  reject = avsigclip, mclip = yes, nkeep = 1
+  lsigma = 3., hsigma = 3.
+  blank = 1.
+                Images     Mode  Scale
+  zero_corrected/FlatB.0030b.fits    194.  1.001
+  zero_corrected/FlatB.0031b.fits    194.  1.001
+  zero_corrected/FlatB.0032b.fits   194.5  0.998
+
+  Output image = masters/blue_flat.fits, ncombine = 3
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 12 16:21 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068b.fits: Aug 12 16:38 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068b.fits: Aug 13 13:51 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 13 13:51 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 13 13:54 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068b.fits: Aug 13 13:56 Flat field image is masters/blue_flat_norm.fits with scale=1.
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0024r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0025r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0026r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0027r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0028r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/FlatR.0029r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0033r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0034r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0035r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0036r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0037r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0057r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0058r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0059r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0060r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0061r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0062r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0063r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0064r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0065r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0066r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0067r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/YZCMi_henear.0068r.fits: Aug 14 11:47 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+masters/red_zero.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS02-20.0045r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS04-03.0073r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110.0038r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110.0039r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110.0054r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0040r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0055r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0023r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS02-20.0045r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/CDFS_MOS04-03.0073r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110.0038r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110.0039r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110.0054r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0040r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0055r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0023r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0024r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0024r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0025r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0025r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0026r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0026r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0027r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0027r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0028r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0028r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/FlatR.0029r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/FlatR.0029r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0033r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0033r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0034r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0034r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0035r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0035r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0036r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0036r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0037r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0037r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 11:48 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 11:48 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0057r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0057r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0058r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0058r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0059r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0059r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0060r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0060r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0061r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0061r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0062r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0062r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0063r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0063r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0064r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0064r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0065r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0065r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0066r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0066r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0067r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi.0067r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/YZCMi_henear.0068r.fits: Aug 14 11:49 Trim data section is [1:2048,100:350]
+original/YZCMi_henear.0068r.fits: Aug 14 11:49 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:54 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41.0046r.fits: Aug 14 11:54 Overscan section is [2051:2090,100:350] with mean=123.4218
+
+Aug 14 12:01: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+  original/Bias.0001b.fits
+  original/Bias.0002b.fits
+  original/Bias.0003b.fits
+  original/Bias.0004b.fits
+  original/Bias.0005b.fits
+  original/Bias.0006b.fits
+  original/Bias.0007b.fits
+  original/Bias.0008b.fits
+  original/Bias.0009b.fits
+  original/Bias.0010b.fits
+  original/Bias.0011b.fits
+  original/Bias.0012b.fits
+  original/Bias.0013b.fits
+  original/Bias.0014b.fits
+  original/Bias.0015b.fits
+
+  Output image = masters/blue_zero.fits, ncombine = 15
+
+Aug 14 12:01: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+  original/Bias.0001r.fits
+  original/Bias.0002r.fits
+  original/Bias.0003r.fits
+  original/Bias.0004r.fits
+  original/Bias.0005r.fits
+  original/Bias.0006r.fits
+  original/Bias.0007r.fits
+  original/Bias.0008r.fits
+  original/Bias.0009r.fits
+  original/Bias.0010r.fits
+  original/Bias.0011r.fits
+  original/Bias.0012r.fits
+  original/Bias.0013r.fits
+  original/Bias.0014r.fits
+  original/Bias.0015r.fits
+
+  Output image = masters/red_zero.fits, ncombine = 15
+original/CDFS_MOS00-41.0046r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41.0046r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.4218
+masters/red_zero.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+masters/red_zero.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=119.666
+original/CDFS_MOS00-41.0046r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.3676
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/CDFS_MOS02-20.0045r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.4473
+original/CDFS_MOS02-20.0045r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/CDFS_MOS04-03.0073r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.6285
+original/CDFS_MOS04-03.0073r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/Feige110.0038r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.9654
+original/Feige110.0038r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/Feige110.0039r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.8832
+original/Feige110.0039r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/Feige110.0054r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2403
+original/Feige110.0054r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0040r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.6665
+original/Feige110_henear.0040r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0055r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2642
+original/Feige110_henear.0055r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0023r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.6274
+original/FlatR.0023r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0024r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0024r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.6519
+original/FlatR.0024r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0025r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0025r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.5859
+original/FlatR.0025r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0026r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0026r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.6069
+original/FlatR.0026r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0027r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0027r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.5805
+original/FlatR.0027r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0028r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0028r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.5347
+original/FlatR.0028r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/FlatR.0029r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/FlatR.0029r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.5425
+original/FlatR.0029r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0033r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0033r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.6246
+original/HeNeAr_B.0033r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0034r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0034r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.6054
+original/HeNeAr_B.0034r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0035r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0035r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.2602
+original/HeNeAr_R.0035r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0036r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0036r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.3383
+original/HeNeAr_R.0036r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0037r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0037r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=120.3204
+original/HeNeAr_R.0037r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.879
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.148
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.4374
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.3754
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.2675
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.2657
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.1919
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.5527
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2266
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.0582
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=122.4179
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.0121
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.129
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.0434
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=125.0175
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0057r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0057r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.3091
+original/YZCMi.0057r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0058r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0058r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2599
+original/YZCMi.0058r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0059r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0059r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2539
+original/YZCMi.0059r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0060r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0060r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2069
+original/YZCMi.0060r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0061r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0061r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.1333
+original/YZCMi.0061r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0062r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0062r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2729
+original/YZCMi.0062r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0063r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0063r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2074
+original/YZCMi.0063r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0064r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0064r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2267
+original/YZCMi.0064r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0065r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0065r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.268
+original/YZCMi.0065r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0066r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0066r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.1971
+original/YZCMi.0066r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0067r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi.0067r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.186
+original/YZCMi.0067r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/YZCMi_henear.0068r.fits: Aug 14 12:02 Trim data section is [1:2048,100:350]
+original/YZCMi_henear.0068r.fits: Aug 14 12:02 Overscan section is [2051:2090,100:350] with mean=123.2284
+original/YZCMi_henear.0068r.fits: Aug 14 12:02 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.05211
+masters/blue_zero.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+masters/blue_zero.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.36539
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.02152
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS02-20.0045b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/CDFS_MOS02-20.0045b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.11707
+original/CDFS_MOS02-20.0045b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS04-03.0073b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/CDFS_MOS04-03.0073b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.92917
+original/CDFS_MOS04-03.0073b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0038b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/Feige110.0038b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.1626
+original/Feige110.0038b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0039b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/Feige110.0039b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.09232
+original/Feige110.0039b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0054b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/Feige110.0054b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.0177
+original/Feige110.0054b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0040b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0040b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.14503
+original/Feige110_henear.0040b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0055b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0055b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.95364
+original/Feige110_henear.0055b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0030b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/FlatB.0030b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.67565
+original/FlatB.0030b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0031b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/FlatB.0031b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.61735
+original/FlatB.0031b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0032b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/FlatB.0032b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.68553
+original/FlatB.0032b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0033b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0033b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.52406
+original/HeNeAr_B.0033b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0034b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0034b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.54831
+original/HeNeAr_B.0034b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0035b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0035b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.46732
+original/HeNeAr_R.0035b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0036b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0036b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.46732
+original/HeNeAr_R.0036b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0037b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0037b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.45719
+original/HeNeAr_R.0037b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.15807
+original/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.06393
+original/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.15759
+original/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.11002
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.98437
+original/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.916
+original/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.99854
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.09763
+original/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.00927
+original/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.903
+original/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.95882
+original/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.01237
+original/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.03454
+original/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.97643
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.97657
+original/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0057b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0057b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.03763
+original/YZCMi.0057b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0058b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0058b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.04052
+original/YZCMi.0058b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0059b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0059b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.04102
+original/YZCMi.0059b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0060b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0060b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.03336
+original/YZCMi.0060b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0061b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0061b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.05127
+original/YZCMi.0061b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0062b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0062b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.00329
+original/YZCMi.0062b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0063b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0063b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.00964
+original/YZCMi.0063b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0064b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0064b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.05078
+original/YZCMi.0064b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0065b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0065b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.97074
+original/YZCMi.0065b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0066b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0066b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.97279
+original/YZCMi.0066b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0067b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi.0067b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=98.08801
+original/YZCMi.0067b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/YZCMi_henear.0068b.fits: Aug 14 12:03 Trim data section is [1:2048,100:350]
+original/YZCMi_henear.0068b.fits: Aug 14 12:03 Overscan section is [2051:2090,100:350] with mean=97.99429
+original/YZCMi_henear.0068b.fits: Aug 14 12:03 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:08 Trim data section is [1:2048,175:425]
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:08 Overscan section is [2051:2090,100:350] with mean=98.08853
+
+Aug 14 12:09: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+  original/Bias.0001r.fits
+  original/Bias.0002r.fits
+  original/Bias.0003r.fits
+  original/Bias.0004r.fits
+  original/Bias.0005r.fits
+  original/Bias.0006r.fits
+  original/Bias.0007r.fits
+  original/Bias.0008r.fits
+  original/Bias.0009r.fits
+  original/Bias.0010r.fits
+  original/Bias.0011r.fits
+  original/Bias.0012r.fits
+  original/Bias.0013r.fits
+  original/Bias.0014r.fits
+  original/Bias.0015r.fits
+
+  Output image = masters/red_zero.fits, ncombine = 15
+
+Aug 14 12:10: IMCOMBINE
+  combine = median, scale = none, zero = none, weight = none
+  reject = minmax, nlow = 0, nhigh = 1
+  blank = 0.
+                Images 
+  original/Bias.0001b.fits
+  original/Bias.0002b.fits
+  original/Bias.0003b.fits
+  original/Bias.0004b.fits
+  original/Bias.0005b.fits
+  original/Bias.0006b.fits
+  original/Bias.0007b.fits
+  original/Bias.0008b.fits
+  original/Bias.0009b.fits
+  original/Bias.0010b.fits
+  original/Bias.0011b.fits
+  original/Bias.0012b.fits
+  original/Bias.0013b.fits
+  original/Bias.0014b.fits
+  original/Bias.0015b.fits
+
+  Output image = masters/blue_zero.fits, ncombine = 15
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.08853
+masters/blue_zero.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+masters/blue_zero.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.35795
+original/CDFS_MOS00-41.0046b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.00533
+original/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS02-20.0045b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/CDFS_MOS02-20.0045b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.09048
+original/CDFS_MOS02-20.0045b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS04-03.0073b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/CDFS_MOS04-03.0073b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.94743
+original/CDFS_MOS04-03.0073b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0038b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/Feige110.0038b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.15768
+original/Feige110.0038b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0039b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/Feige110.0039b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.10876
+original/Feige110.0039b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/Feige110.0054b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/Feige110.0054b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.97706
+original/Feige110.0054b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0040b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/Feige110_henear.0040b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.13269
+original/Feige110_henear.0040b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/Feige110_henear.0055b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/Feige110_henear.0055b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.94157
+original/Feige110_henear.0055b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0030b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/FlatB.0030b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.65041
+original/FlatB.0030b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0031b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/FlatB.0031b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.62906
+original/FlatB.0031b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/FlatB.0032b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/FlatB.0032b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.69079
+original/FlatB.0032b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0033b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/HeNeAr_B.0033b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.56254
+original/HeNeAr_B.0033b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_B.0034b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/HeNeAr_B.0034b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.55911
+original/HeNeAr_B.0034b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0035b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/HeNeAr_R.0035b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.48881
+original/HeNeAr_R.0035b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0036b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/HeNeAr_R.0036b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.46938
+original/HeNeAr_R.0036b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/HeNeAr_R.0037b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/HeNeAr_R.0037b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.49271
+original/HeNeAr_R.0037b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.14323
+original/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.07751
+original/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.17577
+original/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.09566
+original/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.00196
+original/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.88669
+original/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.9596
+original/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.07471
+original/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.98972
+original/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.89909
+original/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.94205
+original/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.97216
+original/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.99988
+original/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.00257
+original/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.00326
+original/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0057b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0057b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.0182
+original/YZCMi.0057b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0058b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0058b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.06252
+original/YZCMi.0058b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0059b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0059b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.0314
+original/YZCMi.0059b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0060b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0060b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.98832
+original/YZCMi.0060b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0061b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0061b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.03893
+original/YZCMi.0061b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0062b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0062b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.99625
+original/YZCMi.0062b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0063b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0063b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.9956
+original/YZCMi.0063b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0064b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0064b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.05652
+original/YZCMi.0064b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0065b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0065b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.93021
+original/YZCMi.0065b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0066b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0066b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.96928
+original/YZCMi.0066b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi.0067b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi.0067b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=98.03514
+original/YZCMi.0067b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/YZCMi_henear.0068b.fits: Aug 14 12:11 Trim data section is [1:2048,175:425]
+original/YZCMi_henear.0068b.fits: Aug 14 12:11 Overscan section is [2051:2090,175:425] with mean=97.97656
+original/YZCMi_henear.0068b.fits: Aug 14 12:11 Zero level correction image is masters/blue_zero.fits
+original/CDFS_MOS00-41.0046r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41.0046r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.4218
+masters/red_zero.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+masters/red_zero.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=119.666
+original/CDFS_MOS00-41.0046r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.3676
+original/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS02-20.0045r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/CDFS_MOS02-20.0045r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.4473
+original/CDFS_MOS02-20.0045r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/CDFS_MOS04-03.0073r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/CDFS_MOS04-03.0073r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.6285
+original/CDFS_MOS04-03.0073r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/Feige110.0038r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/Feige110.0038r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.9654
+original/Feige110.0038r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/Feige110.0039r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/Feige110.0039r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.8832
+original/Feige110.0039r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/Feige110.0054r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/Feige110.0054r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2403
+original/Feige110.0054r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0040r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0040r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.6665
+original/Feige110_henear.0040r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/Feige110_henear.0055r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/Feige110_henear.0055r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2642
+original/Feige110_henear.0055r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0023r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0023r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.6274
+original/FlatR.0023r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0024r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0024r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.6519
+original/FlatR.0024r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0025r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0025r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.5859
+original/FlatR.0025r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0026r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0026r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.6069
+original/FlatR.0026r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0027r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0027r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.5805
+original/FlatR.0027r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0028r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0028r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.5347
+original/FlatR.0028r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/FlatR.0029r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/FlatR.0029r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.5425
+original/FlatR.0029r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0033r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0033r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.6246
+original/HeNeAr_B.0033r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_B.0034r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/HeNeAr_B.0034r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.6054
+original/HeNeAr_B.0034r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0035r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0035r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.2602
+original/HeNeAr_R.0035r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0036r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0036r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.3383
+original/HeNeAr_R.0036r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/HeNeAr_R.0037r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/HeNeAr_R.0037r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=120.3204
+original/HeNeAr_R.0037r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.879
+original/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.148
+original/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.4374
+original/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.3754
+original/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.2675
+original/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.2657
+original/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.1919
+original/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.5527
+original/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2266
+original/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.0582
+original/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=122.4179
+original/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.0121
+original/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.129
+original/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.0434
+original/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=125.0175
+original/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0057r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0057r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.3091
+original/YZCMi.0057r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0058r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0058r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2599
+original/YZCMi.0058r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0059r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0059r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2539
+original/YZCMi.0059r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0060r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0060r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2069
+original/YZCMi.0060r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0061r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0061r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.1333
+original/YZCMi.0061r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0062r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0062r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2729
+original/YZCMi.0062r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0063r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0063r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2074
+original/YZCMi.0063r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0064r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0064r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2267
+original/YZCMi.0064r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0065r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0065r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.268
+original/YZCMi.0065r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0066r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0066r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.1971
+original/YZCMi.0066r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi.0067r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi.0067r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.186
+original/YZCMi.0067r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+original/YZCMi_henear.0068r.fits: Aug 14 12:12 Trim data section is [1:2048,100:350]
+original/YZCMi_henear.0068r.fits: Aug 14 12:12 Overscan section is [2051:2090,100:350] with mean=123.2284
+original/YZCMi_henear.0068r.fits: Aug 14 12:12 Zero level correction image is masters/red_zero.fits
+
+Aug 14 12:13: IMCOMBINE
+  combine = average, scale = mode, zero = none, weight = none
+  reject = avsigclip, mclip = yes, nkeep = 1
+  lsigma = 3., hsigma = 3.
+  blank = 1.
+                Images     Mode  Scale
+  zero_corrected/FlatB.0030b.fits  218.21  1.000
+  zero_corrected/FlatB.0031b.fits  217.73  1.002
+  zero_corrected/FlatB.0032b.fits  218.67  0.998
+
+  Output image = masters/blue_flat.fits, ncombine = 3
+
+Aug 14 12:14: IMCOMBINE
+  combine = average, scale = mode, zero = none, weight = none
+  reject = avsigclip, mclip = yes, nkeep = 1
+  lsigma = 3., hsigma = 3.
+  blank = 1.
+                Images     Mode  Scale
+  zero_corrected/FlatR.0023r.fits  18212.  0.999
+  zero_corrected/FlatR.0024r.fits  18261.  0.996
+  zero_corrected/FlatR.0025r.fits  18161.  1.002
+  zero_corrected/FlatR.0026r.fits  18138.  1.003
+  zero_corrected/FlatR.0027r.fits  18184.  1.000
+  zero_corrected/FlatR.0028r.fits  18177.  1.001
+  zero_corrected/FlatR.0029r.fits  18200.  0.999
+
+  Output image = masters/red_flat.fits, ncombine = 7
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 14 12:27 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 14 12:30 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068r.fits: Aug 14 12:32 Flat field image is masters/red_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41.0046b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS00-41_henear.0047b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS02-20.0045b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/CDFS_MOS04-03.0073b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0038b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0039b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110.0054b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0040b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/Feige110_henear.0055b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0033b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_B.0034b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0035b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0036b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/HeNeAr_R.0037b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS01-12.0041b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-06.0042b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09.0043b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/VVDS22H_MOS05-09_henear.0044b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0070b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06.0071b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS00-06_henear.0072b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-06.0050b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS01-07.0051b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0056b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS02-12.0069b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-08.0048b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13.0052b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-13_henear.0053b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/XMMLSS_MOS06-22.0049b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0057b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0058b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0059b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0060b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0061b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0062b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0063b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0064b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0065b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0066b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi.0067b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.
+zero_corrected/YZCMi_henear.0068b.fits: Aug 14 12:32 Flat field image is masters/blue_flat_norm.fits with scale=1.

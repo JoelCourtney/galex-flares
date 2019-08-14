@@ -1,0 +1,28 @@
+# Wed 13:06:15 14-Aug-2019
+begin	aperture flat_zero_corrected/XMMLSS_MOS06-08.0048b 1 1024. 154.139
+	image	flat_zero_corrected/XMMLSS_MOS06-08.0048b
+	aperture	1
+	beam	1
+	center	1024. 154.139
+	low	-1023. -5.
+	high	1024. 5.
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 2
+		sample -30:-20,20:30
+		naverage -100
+		niterate 3
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		14.
+		2044.
+		3.038611
+		-4.240096
+

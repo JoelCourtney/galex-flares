@@ -1,0 +1,8 @@
+567 high
+2050 overscan
+
+Trim Sec Red
+1:2048,100:350
+
+Trim Sec Blue
+1:2048,175:425

@@ -4,22 +4,22 @@
 if (defpar ("logver"))
     logver = "IRAF V2.16 March 2012"
 
-set	home		= "/home/joel/"
-set	imdir		= "/tmp/joel/"
+set	home		= "/Users/joelcourtney/repos/galex-flares/data/iraf/"
+set	imdir		= "/tmp/joelcourtney/"
 set	cache		= "U_CACHEDIR"
 set	uparm		= "home$uparm/"
-set	userid		= "joel"
+set	userid		= "joelcourtney"
 
 # Set the terminal type.  We assume the user has defined this correctly 
 # when issuing the MKIRAF and no longer key off the unix TERM to set a
 # default.
 if (access (".hushiraf") == no)
-    print "setting terminal type to gterm..."
-stty gterm
+    print "setting terminal type to xgterm..."
+stty xgterm
 
 
 # Uncomment and edit to change the defaults.
-set	editor		= vim
+set	editor		= emacs
 #set	printer		= lp
 #set	pspage		= "letter"
 set	stdimage	= imt2048

@@ -1,0 +1,28 @@
+# Wed 12:58:05 14-Aug-2019
+begin	aperture flat_zero_corrected/VVDS22H_MOS05-06.0042r 1 1024. 162.0529
+	image	flat_zero_corrected/VVDS22H_MOS05-06.0042r
+	aperture	1
+	beam	1
+	center	1024. 162.0529
+	low	-1023. -5.
+	high	1024. 5.
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 2
+		sample -30:-20,20:30
+		naverage -100
+		niterate 3
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		4.
+		2044.
+		0.3201995
+		4.785676
+

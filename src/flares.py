@@ -166,12 +166,13 @@ def auto_detect_all():
                 return
             n += 1
     sd = math.sqrt(sd/(n-1))
-    thresh = 1+4.5*sd
+    thresh = 1+5*sd
     count = 0
     for i in range(len(lcs)):
         id = ids[i]
         lc = lcs[i]
         exps = query.misc.get_exposures(id)
+        print(id)
         count += auto_detect(lc, 1, thresh, exps)
     print(count)
 
