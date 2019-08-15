@@ -1,8 +1,16 @@
 567 high
 2050 overscan
 
+BiasSec
+2051:2090,100:350
+
 Trim Sec Red
 1:2048,100:350
 
 Trim Sec Blue
 1:2048,175:425
+
+Final Trim Red
+
+Final Trim Blue
+450:1775,1:1

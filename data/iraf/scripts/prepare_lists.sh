@@ -35,3 +35,9 @@ sed 's/flat_zero_corrected/extracted/' lists/red_stars.list > lists/red_stars_ex
 
 sed 's/extracted/wavecal/' lists/blue_stars_extracted.list > lists/blue_stars_wavecal.list
 sed 's/extracted/wavecal/' lists/red_stars_extracted.list > lists/red_stars_wavecal.list
+
+sed 's/wavecal/fluxcal/' lists/blue_stars_wavecal.list > lists/blue_stars_fluxcal.list
+sed 's/wavecal/fluxcal/' lists/red_stars_wavecal.list > lists/red_stars_fluxcal.list
+
+sed 's/wavecal/final/' lists/blue_stars_wavecal.list > lists/blue_stars_final.list
+sed 's/wavecal/final/' lists/red_stars_wavecal.list > lists/red_stars_final.list

@@ -26,7 +26,7 @@ atexit.register(close)
 db = sql.connect(
     'galex-flares-new.chbe8bqs2zwl.us-east-1.rds.amazonaws.com',
     'joelcourtney',
-    'Peri-melasma*',
+    'MdNrd2zN$4p3!nGzb2%wctMTKXzKs*RSKiKzEnb%E8p@UyAD$',
     'galex_flares'
 )
 # prepare a cursor object using cursor() method
@@ -37,7 +37,7 @@ cursor.execute("SELECT VERSION()")
 
 # Fetch a single row using fetchone() method.
 data = cursor.fetchone()
-print ("Database version : %s " % data)
+print("Database version : %s " % data)
 
 
 def refresh_connection():

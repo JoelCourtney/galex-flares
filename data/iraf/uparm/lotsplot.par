@@ -1,4 +1,4 @@
-images,s,a,'wavecal/Feige110.0039b.fits',,,'List of images to plot'
+images,s,a,'fluxcal/XMMLSS_MOS01-07.0051b.fits',,,'List of images to plot'
 line,i,q,1,0,,'Image line/aperture to plot'
 band,i,q,1,1,,'Image band to plot'
 units,s,h,'nm',,,'Plotting units'
