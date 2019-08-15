@@ -30,3 +30,8 @@ grep -i -v 'henear' lists/red_flat_zero_corrected.list > lists/red_stars.list
 
 sed 's/flat_zero_corrected/extracted/' lists/blue_stars.list > lists/blue_stars_extracted.list
 sed 's/flat_zero_corrected/extracted/' lists/red_stars.list > lists/red_stars_extracted.list
+
+
+
+sed 's/extracted/wavecal/' lists/blue_stars_extracted.list > lists/blue_stars_wavecal.list
+sed 's/extracted/wavecal/' lists/red_stars_extracted.list > lists/red_stars_wavecal.list

@@ -1,7 +1,7 @@
-images,s,a,'extracted/HeNeAr_B.0034b.fits',,,'List of images to plot'
+images,s,a,'wavecal/Feige110.0039b.fits',,,'List of images to plot'
 line,i,q,1,0,,'Image line/aperture to plot'
 band,i,q,1,1,,'Image band to plot'
-units,s,h,'',,,'Plotting units'
+units,s,h,'nm',,,'Plotting units'
 options,s,h,'auto wreset',,,'Combination of plotting options:
 auto, zero, xydraw, histogram,
 nosysid, wreset, flip, overplot'

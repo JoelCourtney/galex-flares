@@ -1,2 +1,2 @@
-newdir,s,a,'database/idextracted',,,'name of the new directory'
+newdir,s,a,'wavecal',,,'name of the new directory'
 mode,s,h,'al'
