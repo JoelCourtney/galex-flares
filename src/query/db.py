@@ -44,7 +44,7 @@ def refresh_connection():
     db = sql.connect(
         'galex-flares.chbe8bqs2zwl.us-east-1.rds.amazonaws.com',
         'joelcourtney',
-        'Peri-melasma*',
+        'MdNrd2zN$4p3!nGzb2%wctMTKXzKs*RSKiKzEnb%E8p@UyAD$',
         'galex_flares'
     )
     cursor = db.cursor(sql.cursors.DictCursor)
