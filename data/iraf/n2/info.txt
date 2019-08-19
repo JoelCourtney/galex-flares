@@ -16,4 +16,4 @@ Trim Sec Blue
 Final Trim Red
 
 Final Trim Blue
-450:1775,1:1
+3500 - 5700
