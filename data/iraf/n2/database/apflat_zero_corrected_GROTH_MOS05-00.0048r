@@ -1,0 +1,28 @@
+# Fri 16:40:15 16-Aug-2019
+begin	aperture flat_zero_corrected/GROTH_MOS05-00.0048r 1 1024. 212.5639
+	image	flat_zero_corrected/GROTH_MOS05-00.0048r
+	aperture	1
+	beam	1
+	center	1024. 212.5639
+	low	-1023. -2.034977
+	high	1024. 2.109841
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 2
+		sample -30:-20,20:30
+		naverage -100
+		niterate 3
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		4.
+		2044.
+		0.332322
+		4.935032
+

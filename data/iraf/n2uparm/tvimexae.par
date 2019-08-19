@@ -1,4 +1,4 @@
-input,s,a,'original/Flat_B.0020b.fits',,,'images to be examined'
+input,s,a,'flat_zero_corrected/GROTH_MOS05-00.0048r.fits',,,'images to be examined'
 output,s,h,'',,,'output root image name'
 ncoutput,i,h,101,1,,'Number of columns in image output'
 nloutput,i,h,101,1,,'Number of lines in image output'

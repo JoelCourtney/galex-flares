@@ -1,0 +1,28 @@
+# Fri 14:52:46 16-Aug-2019
+begin	aperture flat_zero_corrected/Feige67.0062b 1 1024. 177.0466
+	image	flat_zero_corrected/Feige67.0062b
+	aperture	1
+	beam	1
+	center	1024. 177.0466
+	low	-1023. -2.715419
+	high	1024. 2.662844
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 2
+		sample -30:-20,20:30
+		naverage -100
+		niterate 3
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		4.
+		2044.
+		1.21362
+		2.650625
+

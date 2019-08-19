@@ -14,8 +14,8 @@ sed 's/original/zero_corrected/' lists/blue_zero_comp.list > lists/blue_zero_cor
 
 
 
-grep 'FlatR' lists/red_zero_corrected.list > lists/red_flat.list
-grep 'FlatB' lists/blue_zero_corrected.list > lists/blue_flat.list
+grep 'Flat_R' lists/red_zero_corrected.list > lists/red_flat.list
+grep 'Flat_B' lists/blue_zero_corrected.list > lists/blue_flat.list
 
 grep -v 'Flat' lists/red_zero_corrected.list > lists/red_flat_comp.list
 grep -v 'Flat' lists/blue_zero_corrected.list > lists/blue_flat_comp.list

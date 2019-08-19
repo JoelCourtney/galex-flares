@@ -1,6 +1,7 @@
 import query.sdss
 import numpy as np
 import math
+from pyraf import iraf
 
 
 mu = [

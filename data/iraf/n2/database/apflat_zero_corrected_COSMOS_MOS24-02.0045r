@@ -1,0 +1,28 @@
+# Fri 16:40:14 16-Aug-2019
+begin	aperture flat_zero_corrected/COSMOS_MOS24-02.0045r 1 1024. 213.2423
+	image	flat_zero_corrected/COSMOS_MOS24-02.0045r
+	aperture	1
+	beam	1
+	center	1024. 213.2423
+	low	-1023. -3.181942
+	high	1024. 2.827375
+	background
+		xmin -30.
+		xmax 30.
+		function chebyshev
+		order 2
+		sample -30:-20,20:30
+		naverage -100
+		niterate 3
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	2
+	curve	6
+		2.
+		2.
+		4.
+		2044.
+		0.2059246
+		4.83439
+

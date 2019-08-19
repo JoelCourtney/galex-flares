@@ -1,0 +1,33 @@
+# Mon 13:48:21 19-Aug-2019
+begin	identify extracted/HeNeAr_60s.0025b - Ap 1
+	id	extracted/HeNeAr_60s.0025b
+	task	identify
+	image	extracted/HeNeAr_60s.0025b - Ap 1
+	aperture	1
+	aplow	8.8
+	aphigh	15.89
+	units	Angstroms
+	features	5
+	        746.08 3888.64644   3888.646   4.0 1 1 HeI
+	       1065.61  4471.4698   4471.477   4.0 1 1 HeI
+	       1198.18 4713.16274   4713.143   4.0 1 1 HeI
+	       1312.75 4921.90175   4921.929   4.0 1 1 HeI
+	       1364.24 5015.68926   5015.675   4.0 1 1 HeI
+	function spline3
+	order 1
+	sample *
+	naverage 1
+	niterate 0
+	low_reject 3.
+	high_reject 3.
+	grow 0.
+	coefficients	8
+		3.
+		1.
+		1.
+		2048.
+		-192.7580908114007
+		419.6274804125871
+		1046.132872967267
+		1652.284785115516
+

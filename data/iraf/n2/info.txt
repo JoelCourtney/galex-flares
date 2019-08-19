@@ -1,0 +1,19 @@
+567 high
+2050 overscan
+
+Bias Sec Red
+2051:2090,50:375
+
+Bias Sec Blue
+2051:2090,151:450
+
+Trim Sec Red
+1:2048,50:375
+
+Trim Sec Blue
+1:2048,151:450
+
+Final Trim Red
+
+Final Trim Blue
+450:1775,1:1
