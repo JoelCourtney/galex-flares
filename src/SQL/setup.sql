@@ -26,6 +26,8 @@ create table Flares (
 	PRIMARY KEY (FlareID),
     FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
 );
+ALTER TABLE Flares ADD SourceNum INT NOT NULL;
+ALTER TABLE Flares ADD FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum);
 
 create table Locks (
 	SourceID VARCHAR(20) NOT NULL,
@@ -92,6 +94,10 @@ CREATE TABLE Lightcurves (
             PRIMARY KEY (SourceID, t0),
             FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
             );
+ALTER TABLE Lightcurves ADD SourceNum INT NOT NULL;
+ALTER TABLE Lightcurves DROP PRIMARY KEY, ADD PRIMARY KEY (SourceNum, t0);
+ALTER TABLE Lightcurves ADD FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum);
+ALTER TABLE Lightcurves DROP FOREIGN KEY Lightcurves_ibfk_1;
 
 CREATE TABLE SDSS (
 	SourceID VARCHAR(20) NOT NULL,
@@ -108,4 +114,15 @@ CREATE TABLE SDSS (
     err_z FLOAT(24),
     PRIMARY KEY (SDSSID),
     FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
+);
+ALTER TABLE SDSS ADD SourceNum INT NOT NULL;
+ALTER TABLE SDSS ADD FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum);
+
+CREATE TABLE Spectra (
+	SourceNum INT NOT NULL,
+	CCDColumn INT NOT NULL,
+    Wavelength FLOAT(24) NOT NULL,
+    Flux FLOAT(24) NOT NULL,
+    PRIMARY KEY (SourceNum, CCDColumn),
+    FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum)
 );
