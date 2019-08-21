@@ -1,6 +1,7 @@
 import pymysql as sql
 import atexit
 import os
+import pandas as pd
 
 
 def insert_nulls(s):
@@ -50,11 +51,40 @@ def refresh_connection():
     cursor = db.cursor(sql.cursors.DictCursor)
 
 
+def execute(query):
+    print(query)
+    try:
+        cursor.execute(query)
+        db.commit()
+    except Exception as e:
+        db.rollback()
+        print(e)
 
 
+def fetch_one(query):
+    print(query)
+    try:
+        cursor.execute(query)
+        return cursor.fetchone()
+    except Exception as e:
+        print(e)
+        return None
 
 
+def fetch_all(query):
+    print(query)
+    try:
+        cursor.execute(query)
+        return cursor.fetchall()
+    except Exception as e:
+        print(e)
+        return None
 
 
-
-
+def fetch_panda(query):
+    print(query)
+    try:
+        df = pd.read_sql(query, db)
+        return df
+    except Exception as e:
+        print(e)

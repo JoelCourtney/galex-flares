@@ -15,6 +15,8 @@ create table Sources (
     PRIMARY KEY (RowNum)
 );
 alter table Sources add RowNum INT AUTO_INCREMENT;
+ALTER TABLE Sources CHANGE SourceID SourceName VARCHAR(20);
+ALTER TABLE Sources CHANGE RowNum SourceID INT NOT NULL AUTO_INCREMENT;
 
 create table Flares (
 	FlareID INT NOT NULL AUTO_INCREMENT,
@@ -28,6 +30,9 @@ create table Flares (
 );
 ALTER TABLE Flares ADD SourceNum INT NOT NULL;
 ALTER TABLE Flares ADD FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum);
+ALTER TABLE Flares DROP FOREIGN KEY Flares_ibfk_1;
+ALTER TABLE Flares CHANGE SourceNum SourceID INT NOT NULL;
+ALTER TABLE Flares RENAME INDEX SourceNum TO SourceID;
 
 create table Locks (
 	SourceID VARCHAR(20) NOT NULL,
@@ -36,6 +41,11 @@ create table Locks (
     
 );
 ALTER TABLE Locks ADD Status VARCHAR(10) NOT NULL;
+ALTER TABLE Locks ADD SourceRow INT NOT NULL;
+ALTER TABLE Locks DROP PRIMARY KEY, ADD PRIMARY KEY (SourceRow, Attribute);
+ALTER TABLE Locks DROP SourceID;
+ALTER TABLE Locks CHANGE SourceRow SourceID INT NOT NULL;
+ALTER TABLE Locks ADD FOREIGN KEY (SourceID) REFERENCES Sources(SourceID);
 
 drop table Parameters;
 create table Parameters (
@@ -98,6 +108,8 @@ ALTER TABLE Lightcurves ADD SourceNum INT NOT NULL;
 ALTER TABLE Lightcurves DROP PRIMARY KEY, ADD PRIMARY KEY (SourceNum, t0);
 ALTER TABLE Lightcurves ADD FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum);
 ALTER TABLE Lightcurves DROP FOREIGN KEY Lightcurves_ibfk_1;
+ALTER TABLE Lightcurves DROP COLUMN SourceID;
+ALTER TABLE Lightcurves CHANGE SourceNum SourceID INT NOT NULL;
 
 CREATE TABLE SDSS (
 	SourceID VARCHAR(20) NOT NULL,
@@ -115,8 +127,13 @@ CREATE TABLE SDSS (
     PRIMARY KEY (SDSSID),
     FOREIGN KEY (SourceID) REFERENCES Sources(SourceID)
 );
+
 ALTER TABLE SDSS ADD SourceNum INT NOT NULL;
 ALTER TABLE SDSS ADD FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum);
+ALTER TABLE SDSS DROP FOREIGN KEY SDSS_ibfk_1;
+ALTER TABLE SDSS DROP COLUMN SourceID;
+ALTER TABLE SDSS CHANGE SourceNum SourceID INT NOT NULL;
+ALTER TABLE SDSS RENAME INDEX SourceNum TO SourceID;
 
 CREATE TABLE Spectra (
 	SourceNum INT NOT NULL,
@@ -126,3 +143,7 @@ CREATE TABLE Spectra (
     PRIMARY KEY (SourceNum, CCDColumn),
     FOREIGN KEY (SourceNum) REFERENCES Sources(RowNum)
 );
+
+ALTER TABLE Spectra DROP PRIMARY KEY, ADD PRIMARY KEY (SourceID, FrameID, Wavelength);
+ALTER TABLE Spectra ADD COLUMN FrameID INT NOT NULL;
+ALTER TABLE Spectra CHANGE SourceNum SourceID INT NOT NULL;

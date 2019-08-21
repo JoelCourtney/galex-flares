@@ -9,8 +9,10 @@ import query.gaia
 import query.sources
 import query.lightcurves
 import query.misc
+import query.spectra
 import numpy as np
 from shutil import copyfile
+from astropy.io import fits
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -134,12 +136,25 @@ def combine_increments(sourceID):
     f.close()
 
 
+def spectra():
+    query.spectra.clear_spectra()
+    for folder in ['n1', 'n2']:
+        full_folder = '../data/iraf/' + folder + '/final/'
+        for file in os.listdir(full_folder):
+            parts = file.split('.')
+            sourceName = parts[0]
+            sourceID = query.sources.get_source(sourceName)['SourceID']
+            frameID = int(parts[1][0:4])
+            path = full_folder + file
+            hdulist = fits.open(path)
+            hdu = hdulist[0]
+            shift = hdu.header['CRVAL1']
+            disp = hdu.header['CD1_1']
+            fluxes = hdu.data[0][0]
+            length = len(fluxes)
+            wavelengths = np.linspace(shift, shift + disp*(length-1), length)
+            query.spectra.insert_spectra(sourceID, frameID, wavelengths, fluxes)
+
+
 if __name__ == '__main__':
-    # all_lightcurves()
-    # incremental_lightcurve('GROTH_MOS05-00')
-    combine_increments('GROTH_MOS05-00')
-    query.lightcurves.insert_lightcurve('GROTH_MOS05-00')
-    # lightcurve('GROTH_MOS01-21')
-    # sources()
-    # lightcurve_table()
-    # extra_source_data()
+    spectra()

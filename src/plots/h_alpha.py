@@ -1,8 +1,9 @@
+import query.spectra
 import query.sources
 import matplotlib.pyplot as plt
-import numpy as np
-import math
 import common
+import math
+
 
 # http://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
 MS_color = [-0.037, 0.377, 0.82, 0.98, 1.84, 2.09, 2.25, 2.49, 3.13, 3.95, 4.8]
@@ -11,26 +12,25 @@ MS_label = ['A0', 'F0', 'G2', 'K0', 'M0', 'M1', 'M2', 'M3', 'M4.5', 'M6', 'M8']
 
 def create_plot():
     sources = query.sources.get_all_sources()
-    colors = [
-        source['Color']
-        for source in sources
-        if source['FluxSD'] is not None and source['Distance'] is not None and source['Color'] is not None
-    ]
-    devs = [
-        common.flux_to_power(source['FluxSD'], source['Distance'])
-        for source in sources
-        if source['FluxSD'] is not None and source['Distance'] is not None and source['Color'] is not None
-    ]
+    powers = []
+    colors = []
+    for source in sources:
+        h_alpha = query.spectra.get_h_alpha(source['SourceID'])
+        color = source['Color']
+        if source['Distance'] is not None and not math.isnan(h_alpha) and color is not None:
+            powers.append(common.flux_to_power(h_alpha, source['Distance']))
+            colors.append(color)
     plt.rc('font', family='serif', size=14)
     fig = plt.figure(figsize=(5, 4))
-    plt.scatter(colors, devs, color='#EE6677', alpha=0.9)
+    plt.scatter(colors, powers, color='#EE6677', alpha=0.9)
     plt.xlabel('Gaia $G_{bp} - G_{rp}$')
-    plt.ylabel('Power StdDev (W/nm)')
-    ymin = 0
-    ymax = 5e21
-    plt.ylim([ymin, ymax])
+    plt.ylabel("H-$\\alpha$ Emission (W/ang)")
+    # ymin = 0
+    # ymax = 5e22
+    # plt.ylim([ymin, ymax])
     xmin, xmax = plt.xlim()
-    for i in range(3, len(MS_color)-2):
+    ymin, ymax = plt.ylim()
+    for i in range(4, len(MS_color)-2):
         x = MS_color[i]
         # plt.plot([x, x], [ymin, ymax], color="blue", alpha=0.3, linestyle='dashed')
         plt.text(x, ymin + (ymax-ymin)*0.8, MS_label[i], horizontalalignment='center')
@@ -40,3 +40,4 @@ def create_plot():
 
 if __name__ == '__main__':
     create_plot()
+
