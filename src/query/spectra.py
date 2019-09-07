@@ -21,3 +21,9 @@ def get_h_alpha(sourceID):
     df = fetch_panda('SELECT * FROM Spectra WHERE SourceID = %i AND Wavelength > %.30f AND Wavelength < %.30f;' %
                     (sourceID, lower, upper))
     return df.max()['Flux']
+
+
+def get_spectrum(sourceID, frameID):
+    df = fetch_panda('SELECT CCDColumn, Wavelength, Flux FROM Spectra WHERE SourceID = %i AND FrameID = %i;'
+                     % (sourceID, frameID))
+    return df

@@ -13,6 +13,7 @@ import query.spectra
 import numpy as np
 from shutil import copyfile
 from astropy.io import fits
+import csv
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -156,5 +157,27 @@ def spectra():
             query.spectra.insert_spectra(sourceID, frameID, wavelengths, fluxes)
 
 
+def spectra_to_csv():
+    for folder in ['n1', 'n2']:
+        full_folder = '../data/iraf/' + folder + '/final/'
+        for file in os.listdir(full_folder):
+            parts = file.split('.')
+            sourceName = parts[0]
+            frameID = int(parts[1][0:4])
+            path = full_folder + file
+            hdulist = fits.open(path)
+            hdu = hdulist[0]
+            shift = hdu.header['CRVAL1']
+            disp = hdu.header['CD1_1']
+            fluxes = hdu.data[0][0]
+            errors = hdu.data[1][0]
+            length = len(fluxes)
+            wavelengths = np.linspace(shift, shift + disp*(length-1), length)
+            zipped = zip(wavelengths, fluxes)
+            with open('../data/iraf/' + folder + '/printed/' + sourceName + '.' + parts[1] + '.csv', 'w+') as f:
+                writer = csv.writer(f, lineterminator='\n')
+                writer.writerows(zipped)
+
+
 if __name__ == '__main__':
-    spectra()
+    spectra_to_csv()

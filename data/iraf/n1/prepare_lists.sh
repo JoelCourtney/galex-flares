@@ -41,3 +41,7 @@ sed 's/wavecal/fluxcal/' lists/red_stars_wavecal.list > lists/red_stars_fluxcal.
 
 sed 's/wavecal/final/' lists/blue_stars_wavecal.list > lists/blue_stars_final.list
 sed 's/wavecal/final/' lists/red_stars_wavecal.list > lists/red_stars_final.list
+
+sed 's/wavecal/printed/g;s/fits/csv csv/g' lists/blue_stars_wavecal.list > lists/blue_stars_printed.list
+sed 's/wavecal/printed/g;s/fits/csv csv/g' lists/red_stars_wavecal.list > lists/red_stars_printed.list
+
